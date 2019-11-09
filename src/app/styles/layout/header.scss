@@ -1,0 +1,36 @@
+//settings
+
+$bg-white: #fff;
+
+
+$tablet-width: max-width 770px;
+$desktop-width: max-width 1440px;
+
+body{
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Arial", sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+  background-color: $bg-white;
+}
+
+
+.page-header{
+  display: flex;
+  flex-direction: column;
+}
+.logo{
+  position: relative;
+
+  &:before{
+    display: block;
+    @include png-sprite($icon-logo-mobile);
+    content: "";
+  }
+}
+
