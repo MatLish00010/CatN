@@ -34,6 +34,16 @@
             </ul>
         </div>
     </nav>
+    <div class="food">
+        <div class="food__block">
+            <div class="food__heading">
+                <h2 class="food-for-cat header-text">Функиональное питание для котов</h2>
+            </div>
+            <div class="food__comment">
+                <p>Занялся собой? Займись котом!</p>
+            </div>
+        </div>
+    </div>
 </header>
 
 <script>
@@ -43,7 +53,7 @@
     navMain.classList.remove('main-nav--nojs');
 
     navToggle.addEventListener('click', function () {
-        if(navMain.classList.contains('main-nav--closed')){
+        if (navMain.classList.contains('main-nav--closed')) {
             navMain.classList.remove('main-nav--closed');
             navMain.classList.add('main-nav--opened');
         } else {
