@@ -246,10 +246,29 @@ body{
   color: white;
 }
 
-.food__button{
+.header__btn{
   position: relative;
   z-index: 1;
-  top: 230px;
+  height: 25px;
+
+  display: block;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 30px;
+
+
+  background-color: #68b738;
+  border: none;
+  cursor: pointer;
+  color: white;
+  outline: none;
+
+  top: 240px;
 }
 
 
