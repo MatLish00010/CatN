@@ -3,7 +3,7 @@
 $bg-white: #fff;
 
 
-$tablet-width:  770px;
+$tablet-width:  750px;
 $desktop-width:  1440px;
 $mobile-width-only: 767px;
 
@@ -19,6 +19,7 @@ body{
   font-style: normal;
   background-color: $bg-white;
 }
+
 
 
 .page-header{
@@ -138,6 +139,7 @@ body{
   min-height: 90px;
   font-weight: bold;
   padding: 0;
+  list-style-type: none;
 }
 
 .site-list a{
@@ -152,7 +154,7 @@ body{
   text-align: center;
 
   background-color: #fff;
-  border-top: 1px solid gray
+  border-top: 1px solid gray;
 
 }
 
@@ -188,7 +190,80 @@ body{
   text-align: center;
 }
 
+@media  (min-width:$tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
 
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 640px;
+    margin: 0 auto;
+    margin-top: -75px;
+    margin-right: 20px;
+    max-height: 90px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .site-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    width: 540px;
+    z-index: 5;
+  }
+
+  .site-list__item{
+    margin-right: 32px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  .site-list__item a{
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 14px;
+
+    background: none;
+    border: none;
+    font-weight: 500;
+  }
+
+  .site-list__item a[href]{
+
+    &:hover{
+      background-color: white;
+    }
+
+    &:active{
+      background-color: white;
+      opacity: 0.3;
+    }
+  }
+
+  .page-header__logo--name{
+    display: none;
+  }
+
+  .logo{
+    position: relative;
+
+    &:before{
+      display: block;
+      @include png-sprite($icon-logo-tablet);
+      content: "";
+      transform: translate(10%, 14%);
+    }
+  }
+}
 
 
 
