@@ -203,20 +203,9 @@ a{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-
-  &:before{
-    position: absolute;
-    background-image: url(../../images/big_img/index-background-mobile.jpg);
-    width: 100%;
-    height: 100%;
-    -webkit-background-size: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    content: "";
-    top: -24px;
-  }
-
+  background: url(../../images/big_img/index-background-mobile.jpg) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .food__img--cat-energy{
