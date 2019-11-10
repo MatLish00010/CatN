@@ -218,7 +218,7 @@ a{
   top: 60%;
 }
 
-.food__block{
+.food__wrap{
   z-index: 1;
 }
 
@@ -347,6 +347,7 @@ a{
 
   .food{
     width: 100%;
+    background: none;
 
 
     &:before{
