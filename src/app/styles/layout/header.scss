@@ -388,8 +388,37 @@ a{
 
 
 @media (min-width: $desktop-width) {
-  .page-header__logo {
-    height: 648px;
+
+
+  header{
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+
+  .site-list{
+    width: 780px;
+  }
+
+  .site-list__item{
+    margin-right: 0;
+  }
+
+  .site-list__item a{
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+
+  .site-list__item a[href]{
+    &:hover {
+      color: greenyellow;
+    }
+
+    &:active{
+      color: gray;
+      background-color: #fff;
+      opacity: 1;
+    }
+
   }
 }
 
