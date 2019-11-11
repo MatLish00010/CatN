@@ -9,44 +9,46 @@
     <title>Document</title>
 </head>
 <body>
-<header class="page-header">
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-        <div class="page-header__logo">
-            <a href="index.html" class="logo"></a>
-        </div>
-        <div class="page-header__logo--name">
-            <a href="index.html" class="name"></a>
-        </div>
-        <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item--active">
-                    <a href="index.html">Главная</a>
-                </li>
-                <li class="site-list__item">
-                    <a href="#">Каталог продукции</a>
-                </li>
-                <li class="site-list__item">
-                    <a href="#">Подбор программы</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="food">
-        <div class="food__wrap">
-            <div class="food__heading">
-                <h2 class="food-for-cat header-text">Функиональное питание для котов</h2>
+<div class="container">
+    <header class="page-header">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <div class="page-header__logo">
+                <a href="index.html" class="logo"></a>
             </div>
-            <div class="food__comment">
-                <p>Занялся собой? Займись котом!</p>
+            <div class="page-header__logo--name">
+                <a href="index.html" class="name"></a>
             </div>
-            <div class="food__img--cat-energy"></div>
+            <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item site-list__item--active">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">Каталог продукции</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="#">Подбор программы</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="food">
+            <div class="food__wrap">
+                <div class="food__heading">
+                    <h2 class="food-for-cat header-text">Функиональное питание для котов</h2>
+                </div>
+                <div class="food__comment">
+                    <p>Занялся собой? Займись котом!</p>
+                </div>
+                <div class="food__img--cat-energy"></div>
+            </div>
+            <a class="header__btn" href="#">Подобрать программу</a>
         </div>
-        <a class="header__btn" href="#">Подобрать программу</a>
-    </div>
-</header>
+    </header>
+</div>
 
 <script>
     var navMain = document.querySelector('.main-nav');

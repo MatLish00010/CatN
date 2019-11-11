@@ -4,7 +4,7 @@ $bg-white: #fff;
 
 
 $tablet-width:  768px;
-$desktop-width:  1440px;
+$desktop-width:  1200px;
 $mobile-width-only: 767px;
 
 body{
@@ -22,6 +22,12 @@ body{
 
 a{
   text-decoration: none;
+}
+
+.container{
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 .page-header{
@@ -46,7 +52,7 @@ a{
     display: block;
     @include png-sprite($icon-logo-mobile-header);
     content: "";
-    transform: translate(130%, -117%);
+    transform: translate(107%, -117%);
   }
 }
 
@@ -149,7 +155,7 @@ a{
 
   font-size: 18px;
   line-height: 24px;
-  color: #000;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -265,6 +271,12 @@ a{
 
 @media  (min-width:$tablet-width) {
 
+  .container{
+    width: 740px;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+
   .page-header{
     align-items: center;
   }
@@ -317,11 +329,10 @@ a{
   .site-list__item a[href]{
 
     &:hover{
-      background-color: white;
+      color: gray;
     }
 
     &:active{
-      background-color: white;
       opacity: 0.3;
     }
   }
@@ -390,9 +401,38 @@ a{
 @media (min-width: $desktop-width) {
 
 
-  header{
-    max-width: 2000px;
+  .container{
+    box-sizing: border-box;
+    width: 1300px;
     margin: 0 auto;
+    padding: 0 auto;
+  }
+
+  .page-header{
+
+    &:after{
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 50px;
+      width: 50%;
+      height: 697px;
+      background-color: #65a93c;
+      background-image: url(../../images/big_img/index-background-desktop.png);
+      background-repeat: no-repeat;
+      background-size: auto 697px;
+      background-position-x: right;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      z-index: 2;
+      top: 100px;
+      width: 530px;
+      height: 492px;
+      background: url(../../images/big_img/index-can.png) no-repeat;
+    }
   }
 
   .logo{
@@ -409,6 +449,7 @@ a{
 
   .site-list{
     width: 780px;
+    justify-content: flex-end;
   }
 
   .site-list__item{
@@ -422,23 +463,28 @@ a{
 
   .site-list__item a[href]{
     &:hover {
-      color: greenyellow;
+      color: white;
     }
 
     &:active{
-      color: gray;
-      background-color: #fff;
+      color: white;
       opacity: 1;
     }
 
   }
 
-  .main-nav__wrapper{
-    margin-right: 60px;
+  .site-list__item--active a{
+    border-bottom: 2px solid white;
   }
 
-  .site-list{
-    justify-content: space-around;
+  .food{
+    z-index: 1;
+    justify-content: flex-start;
+    padding-left: 300px;
+  }
+
+  .food__img--cat-energy{
+    display: none;
   }
 
 }
