@@ -42,6 +42,7 @@ a{
     @include png-sprite($icon-logo-mobile);
     content: "";
     transform: translate(50%, 14%);
+
   }
 }
 
@@ -266,6 +267,11 @@ a{
   outline: none;
 
   top: 240px;
+
+  &:hover{
+    opacity: 0.5;
+    transition: 0.3s;
+  }
 }
 
 
@@ -466,6 +472,8 @@ a{
   .site-list__item a[href]{
     &:hover {
       color: white;
+      transition: 0.3s;
+      opacity: 0.5;
     }
 
     &:active{
@@ -488,6 +496,8 @@ a{
   .food__img--cat-energy{
     display: none;
   }
+
+
 
 }
 
