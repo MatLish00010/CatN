@@ -395,6 +395,18 @@ a{
     margin: 0 auto;
   }
 
+  .logo{
+    position: relative;
+
+    &:before{
+      display: block;
+      @include png-sprite($icon-logo-desktop);
+      content: "";
+      transform: translate(30%, 21%);
+    }
+  }
+
+
   .site-list{
     width: 780px;
   }
@@ -420,6 +432,15 @@ a{
     }
 
   }
+
+  .main-nav__wrapper{
+    margin-right: 60px;
+  }
+
+  .site-list{
+    justify-content: space-around;
+  }
+
 }
 
 
