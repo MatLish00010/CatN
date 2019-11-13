@@ -3,16 +3,9 @@
   flex-direction: column;
 }
 .logo{
-  position: relative;
-
-  &:before{
-    display: block;
-    @include png-sprite($icon-logo-mobile);
-    content: "";
-    transform: translate(50%, 14%);
-
+  display: block;
+  @include png-sprite($icon-logo-mobile);
   }
-}
 
 .name{
   position: relative;
@@ -69,14 +62,8 @@
   }
 
   .logo{
-    position: relative;
-
-    &:before{
-      display: block;
-      @include png-sprite($icon-logo-tablet);
-      content: "";
-      transform: translate(10px, -3px);
-    }
+    display: block;
+    @include png-sprite($icon-logo-tablet);
   }
 
   .header__btn{
@@ -117,13 +104,15 @@
   }
 
   .logo{
-    position: relative;
+    display: block;
+    @include png-sprite($icon-logo-desktop);
+    transform: translateX(50px);
 
     &:before{
-      display: block;
-      @include png-sprite($icon-logo-desktop);
+      display: none;
+      /*@include png-sprite($icon-logo-desktop);
       content: "";
-      transform: translate(60px, -5px);
+      transform: translate(60px, -5px);*/
     }
   }
 }
