@@ -7,9 +7,18 @@
 @import "mixins/png-sprite";
 //@import "mixins/svg-sprite";
 
-@import "layout/header";
 
-
-
-
+@import "layout/variables";
 @import "Fonts/fonts";
+@import "layout/common";
+
+
+//header
+@import "layout/header";
+@import "components/main-nav";
+@import "components/site-list";
+@import "components/hero";
+
+
+
+
