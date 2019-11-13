@@ -19,13 +19,13 @@ body{
 
 @media  (min-width:$tablet-width){
   .container{
-    max-width: 740px;
+    max-width: 770px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container{
-    max-width: 1200px;
+    max-width: 1300px;
   }
 
 }

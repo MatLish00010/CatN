@@ -19,7 +19,7 @@
 }
 
 
-.header__btn{
+&__btn{
   position: relative;
   z-index: 1;
   height: 25px;
@@ -57,7 +57,7 @@
   }
 
 
-  .page-header__logo--name{
+  &__logo--name{
     display: none;
   }
 
@@ -66,7 +66,7 @@
     @include png-sprite($icon-logo-tablet);
   }
 
-  .header__btn{
+  &__btn{
     top: 240px;
     right: 272px;
   }

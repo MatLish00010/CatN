@@ -9,7 +9,7 @@
   background-size: cover;
 }
 
-.hero__img--cat-energy{
+&__img--cat-energy{
   position: absolute;
   background-image: url(../../images/big_img/index-can-mobile.png);
   width: 100%;
@@ -19,21 +19,21 @@
   top: 60%;
 }
 
-.hero__wrap{
+&__wrap{
   z-index: 1;
 }
 
-.hero__heading{
+&__heading{
   width: 272px;
 }
 
-.hero__heading h2{
+&__heading h2{
   font-size: 34px;
   font-weight: 400;
 }
 
 
-.hero__comment p{
+&__comment p{
   text-transform: uppercase;
   color: white;
 }
@@ -49,7 +49,7 @@
     }
   }
 
-  .hero__img--cat-energy{
+  &__img--cat-energy{
     position: absolute;
     background-image: url(../../images/big_img/index-can-tablet.png);
     width: 100%;
@@ -60,7 +60,7 @@
 
   }
 
-  .hero__heading h2{
+  &__heading h2{
     color: black;
     font-size: 49px;
     width: 356px;
@@ -68,7 +68,7 @@
     font-weight: 500;
   }
 
-  .hero__comment p{
+  &__comment p{
     color: black;
   }
 }
@@ -80,7 +80,7 @@
     padding-left: 250px;
   }
 
-  .hero__img--cat-energy{
+  &__img--cat-energy{
     display: none;
   }
 }
