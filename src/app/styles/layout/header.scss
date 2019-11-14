@@ -81,6 +81,7 @@
 @media (min-width: $desktop-width) {
 
   .page-header{
+    height: 700px;
 
     &:after{
       content: "";

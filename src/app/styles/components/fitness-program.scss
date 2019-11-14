@@ -1,6 +1,6 @@
-.fitness-program{
+.fitness-program {
 
-  &__content{
+  &__content {
     background-color: #f2f2f2;
     max-height: 266px;
     display: flex;
@@ -12,7 +12,7 @@
 
   }
 
-  &__content h2{
+  &__content h2 {
     position: relative;
     text-transform: uppercase;
     display: flex;
@@ -24,8 +24,8 @@
 
   }
 
-  &__content--losing h2{
-    &:before{
+  &__content--losing h2 {
+    &:before {
       position: absolute;
       content: "";
       background-color: green;
@@ -37,7 +37,7 @@
       transform: translateX(-225%);
     }
 
-    &:after{
+    &:after {
       content: "";
       position: absolute;
       @include png-sprite($icon-cat-mobile);
@@ -46,8 +46,8 @@
     }
   }
 
-  &__content--accumulation h2{
-    &:before{
+  &__content--accumulation h2 {
+    &:before {
       position: absolute;
       content: "";
       background-color: green;
@@ -59,7 +59,7 @@
       transform: translateX(-225%);
     }
 
-    &:after{
+    &:after {
       content: "";
       position: absolute;
       @include png-sprite($icon-tiger-mobile);
@@ -69,8 +69,7 @@
   }
 
 
-  
-  &__content-text{
+  &__content-text {
     width: 260px;
     padding-left: 7px;
     padding-right: 13px;
@@ -78,7 +77,7 @@
     border-bottom: 1px solid #d9d9d9;
   }
 
-  &__content-wrap{
+  &__content-wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -87,14 +86,14 @@
     width: 280px;
   }
 
-  &__content p{
+  &__content p {
     font-size: 14px;
     color: #444444;
     font-family: "Arial", sans-serif;
     line-height: 20px;
   }
 
-  &__content a{
+  &__content a {
     position: relative;
     font-size: 16px;
     color: #111111;
@@ -104,7 +103,7 @@
     cursor: pointer;
     text-transform: uppercase;
 
-    &:after{
+    &:after {
       position: absolute;
       content: "";
       @include png-sprite($icon-arrow-mobile);
@@ -114,5 +113,157 @@
     }
 
   }
+}
+
+@media (min-width: $tablet-width) {
+  .fitness-program {
+
+
+    &__content {
+      align-items: flex-start;
+      padding-left: 30px;
+      max-height: 370px;
+      min-width: 570px;
+    }
+
+    &__content-text {
+      width: 325px;
+      border: none;
+    }
+
+
+    &__content--losing h2 {
+      &:before {
+        position: absolute;
+        content: "";
+        background-color: green;
+        border-radius: 50%;
+        height: 191px;
+        width: 191px;
+        top: 50%;
+
+        transform: translateX(200%);
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        @include png-sprite($icon-cat-tablet);
+        top: 0;
+        transform: translateX(279%);
+      }
+    }
+
+
+    &__content--accumulation h2 {
+      &:before {
+        position: absolute;
+        content: "";
+        background-color: green;
+        border-radius: 50%;
+        height: 191px;
+        width: 191px;
+        top: 50%;
+
+        transform: translateX(200%);
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        @include png-sprite($icon-tiger-tablet);
+        top: 160%;
+        transform: translateX(137%);
+      }
+    }
+
+  }
+
+  @media (min-width: $desktop-width) {
+    .fitness-program {
+      display: flex;
+      justify-content: space-around;
+
+      &__content{
+        min-width: 520px;
+      }
+
+      &__item{
+        display: flex;
+      }
+
+      &__content--accumulation{
+        margin-left: 50px;
+      }
+
+      &__content-wrap{
+        width: 500px;
+        height: 370px;
+      }
+
+      &__content-wrap h2{
+        font-size: 41px;
+        padding-left: 40px;
+      }
+
+      &__content p{
+        line-height: 26px;
+        font-size: 18px;
+      }
+
+      &__content--losing h2 {
+        &:before {
+          position: absolute;
+          content: "";
+          background-color: green;
+          border-radius: 50%;
+          height: 95px;
+          width: 95px;
+          top: -113%;
+
+          transform: translateX(-231%);
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          @include png-sprite($icon-cat-desktop);
+          top: -128%;
+          transform: translateX(-310%);
+        }
+      }
+
+
+      &__content--accumulation h2 {
+          &:before {
+            position: absolute;
+            content: "";
+            background-color: green;
+            border-radius: 50%;
+            height: 95px;
+            width: 95px;
+            top: -113%;
+
+            transform: translateX(-231%);
+          }
+
+        &:after {
+          content: "";
+          position: absolute;
+          @include png-sprite($icon-tiger-desktop);
+          top: -42%;
+          transform: translateX(-169%);
+        }
+      }
+
+      &__content a{
+        width: 140px;
+        font-size: 24px;
+      }
+
+    }
+
+  }
+
 }
 
