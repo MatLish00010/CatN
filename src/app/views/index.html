@@ -19,20 +19,11 @@
                 <div class="page-header__logo--name">
                     <a href="index.html" class="name"></a>
                 </div>
-                <button class="main-nav__toggle" type="button">
+                <button class="main-nav__toggle toggle-off" type="button">
                     <span class="visually-hidden">Открыть меню</span>
                 </button>
             </div>
             <nav class="main-nav main-nav--closed main-nav--nojs">
-                <!--<div class="page-header__logo">
-                    <a href="index.html" class="logo"></a>
-                </div>
-                <div class="page-header__logo&#45;&#45;name">
-                    <a href="index.html" class="name"></a>
-                </div>
-                <button class="main-nav__toggle" type="button">
-                    <span class="visually-hidden">Открыть меню</span>
-                </button>-->
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list site-list">
                         <li class="site-list__item site-list__item--active">
@@ -55,10 +46,7 @@
                     <div class="hero__comment">
                         <p>Занялся собой? Займись котом!</p>
                     </div>
-                    <picture class="hero__picture">
-                        <img class="hero__picture-img" src="/src/app/images/big_img/index-can-mobile.png"
-                             width="280" height="270" alt="1">
-                    </picture>
+                    <div class="hero__picture"></div>
                 </div>
                 <a class="header__btn" href="#">Подобрать программу</a>
             </div>
@@ -103,16 +91,23 @@
 <script>
     var navMain = document.querySelector('.main-nav');
     var navToggle = document.querySelector('.main-nav__toggle');
+    var navTogglebtn = document.querySelector('.toggle-off');
 
     navMain.classList.remove('main-nav--nojs');
+    navTogglebtn.classList.remove('.toggle-off');
+
 
     navToggle.addEventListener('click', function () {
         if (navMain.classList.contains('main-nav--closed')) {
             navMain.classList.remove('main-nav--closed');
+            navTogglebtn.classList.remove('toggle-off');
             navMain.classList.add('main-nav--opened');
+            navTogglebtn.classList.add('toggle-on');
         } else {
             navMain.classList.add('main-nav--closed');
-            navMain.classList.remove('main-nav--opened')
+            navMain.classList.remove('main-nav--opened');
+            navTogglebtn.classList.add('toggle-off');
+            navTogglebtn.classList.remove('toggle-on');
         }
     });
 </script>

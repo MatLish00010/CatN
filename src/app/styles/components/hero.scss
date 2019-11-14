@@ -7,23 +7,18 @@
   background: url(../../images/big_img/index-background-mobile.jpg) no-repeat;
   background-size: 100% 305px;
   background-position: center top;
+
+  padding-bottom: 20px;
 }
 
-.hero__picture-img{
-  display: block;
+
+
+.hero__picture{
   margin: 0 auto;
-
-
-
-
-
-  /*position: absolute;
-  background-image: url(../../images/big_img/index-can-mobile.png);
-  width: 100%;
-  height: 50%;
-  content: "";
-  background-repeat: no-repeat;
-  transform: translateY(6%);*/
+  @include png-sprite($icon-index-can-mobile);
+  border: none;
+  user-select: none;
+  outline: none;
 }
 
 .hero__wrap{
