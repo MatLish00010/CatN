@@ -102,12 +102,13 @@
     padding-top: 10px;
     padding-bottom: 10px;
     cursor: pointer;
+    text-transform: uppercase;
 
     &:after{
       position: absolute;
       content: "";
       @include png-sprite($icon-arrow-mobile);
-      top: 43%;
+      top: 40%;
       transform: translateX(43%);
 
     }
