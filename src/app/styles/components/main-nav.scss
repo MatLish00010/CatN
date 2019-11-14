@@ -17,24 +17,13 @@
 }
 
 .main-nav__toggle{
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  outline: none;
-
-  display: block;
-  width: 70px;
-  height: 50px;
-  background-color: white;
-
+  width: 24px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
   cursor: pointer;
-  border: none;
+  @include png-sprite($icon-mobile-menu);
 
-  &:hover,
-  &:active{
-    background-color: white;
-  }
 }
 
 .main-nav--closed .main-nav__toggle:before{

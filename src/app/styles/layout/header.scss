@@ -1,25 +1,40 @@
 
 
+
+.page-header__top{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .page-header{
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
 }
 .logo{
   display: block;
   @include png-sprite($icon-logo-mobile);
-  transform: translate(20px , 5px);
   }
 
 .name{
+  display: block;
   position: relative;
+  @include png-sprite($icon-logo-mobile-header);
 
-  &:before{
-    display: block;
-    @include png-sprite($icon-logo-mobile-header);
-    content: "";
-    transform: translate(107%, -117%);
-  }
 }
 
 
@@ -45,7 +60,6 @@
   color: white;
   outline: none;
 
-  top: 140px;
 
   &:hover{
     opacity: 0.5;
