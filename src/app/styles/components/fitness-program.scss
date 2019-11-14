@@ -22,6 +22,9 @@
     color: #111111;
     font-weight: 400;
 
+  }
+
+  &__content--losing h2{
     &:before{
       position: absolute;
       content: "";
@@ -33,7 +36,39 @@
 
       transform: translateX(-225%);
     }
+
+    &:after{
+      content: "";
+      position: absolute;
+      @include png-sprite($icon-cat-mobile);
+      top: -47%;
+      transform: translateX(-315%);
+    }
   }
+
+  &__content--accumulation h2{
+    &:before{
+      position: absolute;
+      content: "";
+      background-color: green;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      top: -43%;
+
+      transform: translateX(-225%);
+    }
+
+    &:after{
+      content: "";
+      position: absolute;
+      @include png-sprite($icon-tiger-mobile);
+      top: 0;
+      transform: translateX(-173%);
+    }
+  }
+
+
   
   &__content-text{
     width: 260px;
