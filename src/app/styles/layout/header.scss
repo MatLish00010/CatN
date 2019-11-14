@@ -26,45 +26,16 @@
 
 }
 
-
-.header__btn{
-  position: relative;
-  z-index: 1;
-  height: 25px;
-
-  display: block;
-
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "Oswald", "Arial", sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 10px 30px;
-  max-width: 300px;
-  margin: 0 auto;
-
-
-  background-color: #68b738;
-  border: none;
-  cursor: pointer;
-  color: white;
-  outline: none;
-
-
-  &:hover{
-    opacity: 0.5;
-    transition: 0.3s;
-  }
-}
-
-
 @media  (min-width:$tablet-width) {
 
   .page-header {
     height: 900px;
     align-items: center;
 
+    &--wrap{
+      display: flex;
+      justify-content: space-between;
+    }
 
     &__logo--name {
       display: none;
@@ -75,10 +46,6 @@
       @include png-sprite($icon-logo-tablet);
     }
 
-    &__btn {
-      top: 240px;
-      right: 272px;
-    }
   }
 }
 

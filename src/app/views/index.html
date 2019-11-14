@@ -12,32 +12,34 @@
 <div class="wrapper">
     <header class="page-header">
         <div class="container">
-            <div class="page-header__top">
-                <div class="page-header__logo">
-                    <a href="index.html" class="logo"></a>
+            <div class="page-header--wrap">
+                <div class="page-header__top">
+                    <div class="page-header__logo">
+                        <a href="index.html" class="logo"></a>
+                    </div>
+                    <div class="page-header__logo--name">
+                        <a href="index.html" class="name"></a>
+                    </div>
+                    <button class="main-nav__toggle toggle-off" type="button">
+                        <span class="visually-hidden">Открыть меню</span>
+                    </button>
                 </div>
-                <div class="page-header__logo--name">
-                    <a href="index.html" class="name"></a>
-                </div>
-                <button class="main-nav__toggle toggle-off" type="button">
-                    <span class="visually-hidden">Открыть меню</span>
-                </button>
+                <nav class="main-nav main-nav--closed main-nav--nojs">
+                    <div class="main-nav__wrapper">
+                        <ul class="main-nav__list site-list">
+                            <li class="site-list__item site-list__item--active">
+                                <a href="index.html">Главная</a>
+                            </li>
+                            <li class="site-list__item">
+                                <a href="#">Каталог продукции</a>
+                            </li>
+                            <li class="site-list__item">
+                                <a href="#">Подбор программы</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <nav class="main-nav main-nav--closed main-nav--nojs">
-                <div class="main-nav__wrapper">
-                    <ul class="main-nav__list site-list">
-                        <li class="site-list__item site-list__item--active">
-                            <a href="index.html">Главная</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="#">Каталог продукции</a>
-                        </li>
-                        <li class="site-list__item">
-                            <a href="#">Подбор программы</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
             <div class="hero">
                 <div class="hero__wrap">
                     <div class="hero__heading">
@@ -47,8 +49,10 @@
                         <p>Занялся собой? Займись котом!</p>
                     </div>
                     <div class="hero__picture"></div>
+                    <div class="hero__btn-wrap">
+                        <a class="hero__btn" href="#">Подобрать программу</a>
+                    </div>
                 </div>
-                <a class="header__btn" href="#">Подобрать программу</a>
             </div>
         </div>
     </header>
@@ -60,6 +64,9 @@
                 <div class="fitness-program__item">
                     <div class="fitness-program__content fitness-program__content--losing">
                         <div class="fitness-program__content-wrap">
+                            <div class="fitness-program__illustration">
+                                <div class="fitness-program__illustration-cat"></div>
+                            </div>
                             <h2>Похудение</h2>
                             <div class="fitness-program__content-text">
                                 <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
@@ -71,6 +78,9 @@
 
                     <div class="fitness-program__content fitness-program__content--accumulation">
                         <div class="fitness-program__content-wrap">
+                            <div class="fitness-program__illustration">
+                                <div class="fitness-program__illustration-tiger"></div>
+                            </div>
                             <h2>Набор массы</h2>
                             <div class="fitness-program__content-text">
                                 <p>Заработать авторитет среди дворовых котов и даже собак?
