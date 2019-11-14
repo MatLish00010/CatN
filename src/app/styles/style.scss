@@ -13,12 +13,17 @@
 @import "layout/common";
 
 
-//header
+@import "layout/wrapper";
+
+
+
 @import "layout/header";
 @import "components/main-nav";
 @import "components/site-list";
 @import "components/hero";
 
 
+
+@import "components/fitness-program";
 
 
