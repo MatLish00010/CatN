@@ -30,6 +30,7 @@
     transform: translate(-12px, 13px);
   }
 
+
   &__content h2 {
     font-size: 24px;
     line-height: 37px;
@@ -40,51 +41,6 @@
     margin-top: 10px;
     margin-bottom: 12px;
   }
-
-  /*&__content--losing h2 {
-    &:before {
-      position: absolute;
-      content: "";
-      background-color: green;
-      border-radius: 50%;
-      height: 50px;
-      width: 50px;
-      top: -43%;
-
-      transform: translateX(-225%);
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      @include png-sprite($icon-cat-mobile);
-      top: -47%;
-      transform: translateX(-315%);
-    }
-  }
-
-  &__content--accumulation h2 {
-    &:before {
-      position: absolute;
-      content: "";
-      background-color: green;
-      border-radius: 50%;
-      height: 50px;
-      width: 50px;
-      top: -43%;
-
-      transform: translateX(-225%);
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      @include png-sprite($icon-tiger-mobile);
-      top: 0;
-      transform: translateX(-173%);
-    }
-  }*/
-
 
   &__content-text {
     min-width: 260px;
@@ -145,11 +101,17 @@
 
     &__content-wrap{
       position: relative;
+      height: auto;
     }
 
     &__illustration-cat{
       @include png-sprite($icon-cat-tablet);
       transform: translate(30px , -6px);
+    }
+
+    &__illustration-tiger{
+      @include png-sprite($icon-tiger-tablet);
+      transform: translate(-45px, 46px);
     }
 
     &__illustration{
@@ -164,52 +126,29 @@
     &__content-text {
       width: 325px;
       border: none;
+      padding: 0;
+    }
+
+    &__content a{
+      width: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      &:after{
+        transform: translateX(380%);
+      }
     }
 
 
-    &__content--losing h2 {
-      /*&:before {
-        position: absolute;
-        content: "";
-        background-color: green;
-        border-radius: 50%;
-        height: 191px;
-        width: 191px;
-        top: 50%;
+    &__content h2 {
+      font-size: 37px;
 
-        transform: translateX(200%);
-      }*/
-
-     /* &:after {
-        content: "";
-        position: absolute;
-        @include png-sprite($icon-cat-tablet);
-        top: 0;
-        transform: translateX(279%);
-      }*/
     }
 
 
     &__content--accumulation h2 {
-      /*&:before {
-        position: absolute;
-        content: "";
-        background-color: green;
-        border-radius: 50%;
-        height: 191px;
-        width: 191px;
-        top: 50%;
 
-        transform: translateX(200%);
-      }*/
-
-      /*&:after {
-        content: "";
-        position: absolute;
-        @include png-sprite($icon-tiger-tablet);
-        top: 160%;
-        transform: translateX(137%);
-      }*/
     }
 
   }
