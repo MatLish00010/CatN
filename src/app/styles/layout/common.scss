@@ -1,4 +1,4 @@
-body{
+body {
   min-width: 320px;
   margin: 0;
   padding: 0;
@@ -11,22 +11,18 @@ body{
   background-color: #ffffff;
 }
 
-.container{
+.container {
   padding-right: 20px;
   padding-left: 20px;
 }
 
-@media  (min-width:$tablet-width){
-
+a {
+  text-decoration: none;
 }
 
 @media (min-width: $desktop-width) {
-  .container{
+  .container {
     max-width: 1200px;
+    margin: 0 auto;
   }
-
-}
-
-a{
-  text-decoration: none;
 }

@@ -10,7 +10,7 @@
     margin-bottom: 30px;
   }
 
-  &__illustration{
+  &__illustration {
     position: relative;
     width: 50px;
     height: 50px;
@@ -20,12 +20,12 @@
 
   }
 
-  &__illustration-cat{
+  &__illustration-cat {
     @include png-sprite($icon-cat-mobile);
     transform: translate(9px, -1px);
   }
 
-  &__illustration-tiger{
+  &__illustration-tiger {
     @include png-sprite($icon-tiger-mobile);
     transform: translate(-12px, 13px);
   }
@@ -99,22 +99,22 @@
     }
 
 
-    &__content-wrap{
+    &__content-wrap {
       position: relative;
       height: auto;
     }
 
-    &__illustration-cat{
-      @include png-sprite($icon-cat-tablet);
-      transform: translate(30px , -6px);
-    }
+    &__illustration-cat {
+       @include png-sprite($icon-cat-tablet);
+       transform: translate(30px, -6px);
+     }
 
-    &__illustration-tiger{
+    &__illustration-tiger {
       @include png-sprite($icon-tiger-tablet);
       transform: translate(-45px, 46px);
     }
 
-    &__illustration{
+    &__illustration {
       position: absolute;
       top: 15px;
       right: 0;
@@ -129,13 +129,13 @@
       padding: 0;
     }
 
-    &__content a{
+    &__content a {
       width: 100%;
       position: relative;
       display: flex;
       align-items: center;
 
-      &:after{
+      &:after {
         transform: translateX(380%);
       }
     }
@@ -158,86 +158,78 @@
       display: flex;
       justify-content: space-around;
 
-      &__content{
-        min-width: 520px;
+      &__content {
+        width: 47%;
+        height: auto;
+        padding-right: 52px;
+        padding-top: 48px;
+        padding-bottom: 62px;
+        margin-top: 28px;
+        margin-bottom: 0;
       }
 
-      &__item{
+      &__item {
         display: flex;
+        justify-content: space-between;
       }
 
-      &__content--accumulation{
+      &__content--accumulation {
         margin-left: 50px;
       }
 
-      &__content-wrap{
-        width: 500px;
-        height: 370px;
+      &__content-wrap {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
       }
 
-      &__content-wrap h2{
-        font-size: 41px;
-        padding-left: 40px;
+      &__illustration{
+        position: relative;
+        top: 0;
+        width: 100px;
+        height: 100px;
+        margin-left: 0;
+        margin-top: 0;
       }
 
-      &__content p{
-        line-height: 26px;
-        font-size: 18px;
+      &__illustration-cat {
+        @include png-sprite($icon-cat-desktop);
+        transform: translate(21px, -1px);
       }
 
-      &__content--losing h2 {
-        /*&:before {
-          position: absolute;
-          content: "";
-          background-color: green;
-          border-radius: 50%;
-          height: 95px;
-          width: 95px;
-          top: -113%;
-
-          transform: translateX(-231%);
-        }*/
-
-        /*&:after {
-          content: "";
-          position: absolute;
-          @include png-sprite($icon-cat-desktop);
-          top: -128%;
-          transform: translateX(-310%);
-        }*/
+      &__illustration-tiger {
+        @include png-sprite($icon-tiger-desktop);
+        transform: translate(-21px, 28px);
       }
 
 
-      &__content--accumulation h2 {
-          /*&:before {
-            position: absolute;
-            content: "";
-            background-color: green;
-            border-radius: 50%;
-            height: 95px;
-            width: 95px;
-            top: -113%;
-
-            transform: translateX(-231%);
-          }*/
-
-       /* &:after {
-          content: "";
-          position: absolute;
-          @include png-sprite($icon-tiger-desktop);
-          top: -42%;
-          transform: translateX(-169%);
-        }*/
+      &__content-wrap h2 {
+        width: calc(100% - 162px);
+        margin-bottom: 0;
       }
 
-      &__content a{
+      &__content-text{
+        width: 100%;
+      }
+
+      &__content-text p {
+        width: 100%;
+        padding-bottom: 32px;
+        margin-top: 40px;
+      }
+
+
+      &__content a {
         width: 140px;
         font-size: 24px;
+
+        &:after{
+          transform: translateX(555%);
+        }
       }
 
     }
-
   }
-
 }
+
 
