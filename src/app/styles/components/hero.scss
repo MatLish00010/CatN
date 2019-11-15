@@ -76,7 +76,6 @@
 
 @media (min-width: $tablet-width) {
   .hero {
-    width: 100%;
     background: none;
     padding-left: 10%;
 
@@ -101,9 +100,10 @@
       order: 2;
       z-index: -1;
       transform: translate(-30px, -74px);
+      width: 662px;
     }
 
-    &__btn-wrap{
+    &__btn-wrap {
       justify-content: start;
     }
 
@@ -127,16 +127,31 @@
 
 @media (min-width: $desktop-width) {
   .hero {
-    z-index: 1;
-    justify-content: flex-start;
-    padding-left: 80px;
+    z-index: 2;
+
+    &__heading {
+      z-index: 2;
+
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 100px;
+        left: 32%;
+        width: 509px;
+        height: 492px;
+        background: url(../../images/big_img/index-can.png) no-repeat;
+      }
+
+    }
+
 
 
     &__img--cat-energy {
       display: none;
     }
 
-    &__picture{
+    &__picture {
       display: none;
     }
 

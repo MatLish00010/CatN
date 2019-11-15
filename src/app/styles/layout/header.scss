@@ -2,8 +2,7 @@
 
 
 .page-header {
-  display: flex;
-  flex-direction: column;
+  display: block;
 
   &__top {
     display: flex;
@@ -68,25 +67,22 @@
       background-image: url(../../images/big_img/index-background-desktop.png);
       background-repeat: no-repeat;
       background-size: auto 697px;
+      background-position: right;
     }
-    &:before{
+    /*&:before{
       content: "";
       position: absolute;
       z-index: 2;
       top: 100px;
       width: 509px;
       height: 492px;
-      background: url(../../images/big_img/index-can.png) no-repeat;
-    }
+      background: url(../../images/big_img/index-can.png) no-repeat;*/
+
   }
 
   .logo{
     display: block;
     @include png-sprite($icon-logo-desktop);
-
-    &:before{
-      display: none;
-    }
   }
 }
 
