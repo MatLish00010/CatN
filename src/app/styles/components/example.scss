@@ -52,7 +52,7 @@
     padding: 0;
   }
 
-  &__stats-title{
+  &__stats-title {
     display: block;
     font-family: "Arial", sans-serif;
     position: absolute;
@@ -71,7 +71,7 @@
     padding-right: 17px;
   }
 
-  &__caption{
+  &__caption {
     line-height: 20px;
     text-transform: uppercase;
     color: #111111;
@@ -81,43 +81,43 @@
   }
 }
 
-@media (min-width:$tablet-width) {
-  .example{
+@media (min-width: $tablet-width) {
+  .example {
     position: relative;
     border-top: 1px solid #e6e6e6;
     background-color: transparent;
 
-    &__title{
+    &__title {
       font-size: 60px;
       margin-bottom: 65px;
     }
 
-    &__text{
+    &__text {
       width: 97%;
       margin-bottom: 51px;
     }
 
-    &__stats{
+    &__stats {
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      &-list{
+      &-list {
         width: 366px;
         justify-content: space-between;
       }
 
-      &-item{
+      &-item {
         width: 162px;
         padding-bottom: 19px;
       }
 
-      &-value{
+      &-value {
         font-size: 30px;
         line-height: 37px;
       }
 
-      &-title{
+      &-title {
         width: 115px;
         padding: 0;
         font-size: 14px;
@@ -125,7 +125,8 @@
         background-color: #fff;
       }
     }
-    &__caption{
+
+    &__caption {
       font-size: 20px;
       line-height: 30px;
       text-align: right;
@@ -135,9 +136,9 @@
   }
 }
 
-@media (min-width:$desktop-width){
-  .example{
-    &__wrap{
+@media (min-width: $desktop-width) {
+  .example {
+    &__wrap {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -146,32 +147,31 @@
       height: 600px;
     }
 
-    &__title{
+    &__title {
       margin-top: 51px;
       margin-bottom: 145px;
       width: 435px;
     }
 
-    &__text{
+    &__text {
       margin-bottom: 68px;
       width: 450px;
     }
 
-    &__stats{
+    &__stats {
       flex-wrap: wrap;
       width: 435px;
 
-      &-list{
+      &-list {
         width: 366px;
       }
 
-      &-item{
+      &-item {
         margin-bottom: 57px;
       }
-
     }
-    
-    &__caption{
+
+    &__caption {
       display: flex;
       justify-content: space-between;
       width: 325px;

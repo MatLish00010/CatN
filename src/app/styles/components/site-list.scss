@@ -1,5 +1,4 @@
 .site-list{
-
   font-weight: bold;
   padding: 0;
   margin: 0;
@@ -19,11 +18,9 @@
 
   background-color: #fff;
   border-top: 1px solid gray;
-
 }
 
 .site-list a[href]{
-
   &:active{
     color: gray;
   }
@@ -37,7 +34,6 @@
 
     width: 540px;
     z-index: 5;
-
 
     &__item {
       margin-right: 32px;
@@ -80,7 +76,6 @@
     width: 1000px;
     justify-content: flex-end;
 
-
     &__item {
       margin-right: 0;
     }
@@ -102,7 +97,6 @@
         color: white;
         opacity: 1;
       }
-
     }
 
     &__item--active a {

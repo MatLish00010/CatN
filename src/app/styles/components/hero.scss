@@ -10,7 +10,6 @@
 
   padding-bottom: 20px;
 
-
   &__picture {
     margin: 0 auto;
     @include png-sprite($icon-index-can-mobile);
@@ -24,18 +23,15 @@
     text-align: center;
   }
 
-
   &__heading h1 {
     font-size: 34px;
     font-weight: 400;
   }
 
-
   &__comment p {
     text-transform: uppercase;
     color: white;
   }
-
 
   &__btn-wrap {
     display: flex;
@@ -66,7 +62,6 @@
     color: white;
     outline: none;
 
-
     &:hover {
       opacity: 0.5;
       transition: 0.3s;
@@ -79,18 +74,15 @@
     background: none;
     padding-left: 10%;
 
-
     &:before {
       display: none;
     }
-
 
     &__wrap {
       text-align: start;
       display: flex;
       flex-direction: column;
     }
-
 
     &__picture {
       margin: 0 auto;
@@ -142,10 +134,7 @@
         height: 492px;
         background: url(../../images/big_img/index-can.png) no-repeat;
       }
-
     }
-
-
 
     &__img--cat-energy {
       display: none;
@@ -154,6 +143,5 @@
     &__picture {
       display: none;
     }
-
   }
 }

@@ -17,7 +17,6 @@
     border-radius: 50%;
     background-color: #68b738;
     transform: translateX(36px);
-
   }
 
   &__illustration-cat {
@@ -82,16 +81,12 @@
       @include png-sprite($icon-arrow-mobile);
       top: 40%;
       transform: translateX(43%);
-
     }
-
   }
 }
 
 @media (min-width: $tablet-width) {
   .fitness-program {
-
-
     &__content {
       padding: 77px 60px 62px 52px;
       margin-top: 0;
@@ -105,9 +100,9 @@
     }
 
     &__illustration-cat {
-       @include png-sprite($icon-cat-tablet);
-       transform: translate(30px, -6px);
-     }
+      @include png-sprite($icon-cat-tablet);
+      transform: translate(30px, -6px);
+    }
 
     &__illustration-tiger {
       @include png-sprite($icon-tiger-tablet);
@@ -140,94 +135,85 @@
       }
     }
 
-
     &__content h2 {
       font-size: 37px;
-
     }
-
-
-    &__content--accumulation h2 {
-
-    }
-
   }
+}
 
-  @media (min-width: $desktop-width) {
-    .fitness-program {
+@media (min-width: $desktop-width) {
+  .fitness-program {
+    display: flex;
+    justify-content: space-around;
+
+    &__content {
+      width: 47%;
+      height: auto;
+      padding-right: 52px;
+      padding-top: 48px;
+      padding-bottom: 62px;
+      margin-top: 28px;
+      margin-bottom: 0;
+    }
+
+    &__item {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+    }
 
-      &__content {
-        width: 47%;
-        height: auto;
-        padding-right: 52px;
-        padding-top: 48px;
-        padding-bottom: 62px;
-        margin-top: 28px;
-        margin-bottom: 0;
+    &__content--accumulation {
+      margin-left: 50px;
+    }
+
+    &__content-wrap {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__illustration {
+      position: relative;
+      top: 0;
+      width: 100px;
+      height: 100px;
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    &__illustration-cat {
+      @include png-sprite($icon-cat-desktop);
+      transform: translate(21px, -1px);
+    }
+
+    &__illustration-tiger {
+      @include png-sprite($icon-tiger-desktop);
+      transform: translate(-21px, 28px);
+    }
+
+
+    &__content-wrap h2 {
+      width: calc(100% - 162px);
+      margin-bottom: 0;
+    }
+
+    &__content-text {
+      width: 100%;
+    }
+
+    &__content-text p {
+      width: 100%;
+      padding-bottom: 32px;
+      margin-top: 40px;
+    }
+
+
+    &__content a {
+      width: 140px;
+      font-size: 24px;
+
+      &:after {
+        transform: translateX(555%);
       }
-
-      &__item {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      &__content--accumulation {
-        margin-left: 50px;
-      }
-
-      &__content-wrap {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      &__illustration{
-        position: relative;
-        top: 0;
-        width: 100px;
-        height: 100px;
-        margin-left: 0;
-        margin-top: 0;
-      }
-
-      &__illustration-cat {
-        @include png-sprite($icon-cat-desktop);
-        transform: translate(21px, -1px);
-      }
-
-      &__illustration-tiger {
-        @include png-sprite($icon-tiger-desktop);
-        transform: translate(-21px, 28px);
-      }
-
-
-      &__content-wrap h2 {
-        width: calc(100% - 162px);
-        margin-bottom: 0;
-      }
-
-      &__content-text{
-        width: 100%;
-      }
-
-      &__content-text p {
-        width: 100%;
-        padding-bottom: 32px;
-        margin-top: 40px;
-      }
-
-
-      &__content a {
-        width: 140px;
-        font-size: 24px;
-
-        &:after{
-          transform: translateX(555%);
-        }
-      }
-
     }
   }
 }

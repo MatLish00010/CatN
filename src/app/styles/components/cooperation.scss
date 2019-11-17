@@ -1,17 +1,17 @@
-.cooperation{
+.cooperation {
 
-  &--index{
+  &--index {
     background-color: #fff;
   }
 
-  &__inner{
+  &__inner {
     padding-top: 28px;
     padding-bottom: 26px;
     display: flex;
     justify-content: space-between;
   }
 
-  &__title{
+  &__title {
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
@@ -21,60 +21,54 @@
     margin: 0;
   }
 
-  &__address{
+  &__address {
     font-family: "Arial", sans-serif;
     line-height: 20px;
     width: 50%;
 
-    &-street{
+    &-street {
       font-family: "Arial", sans-serif;
       color: #444444;
       margin: 0;
       font-size: 14px;
       line-height: 18px;
-
     }
   }
 
-  &__map{
+  &__map {
     width: 100%;
     background-size: 320px 360px;
   }
-
 }
 
 @media (min-width: $tablet-width) {
-  .cooperation{
-
-    &__inner{
+  .cooperation {
+    &__inner {
       padding: 63px 41px 59px;
     }
 
-    &__title{
+    &__title {
       width: 160px;
       font-size: 20px;
       line-height: 25px;
     }
 
-    &__address{
+    &__address {
       width: 200px;
       text-align: right;
 
-      &-street{
+      &-street {
         font-size: 18px;
       }
     }
-
-
   }
-
 }
 
 @media (min-width: $desktop-width) {
-  .cooperation{
+  .cooperation {
     position: relative;
-    
-    &__wrap{
+
+    &__wrap {
       position: absolute;
       z-index: 1;
       top: 95px;
@@ -83,15 +77,13 @@
       background-color: #fff;
     }
 
-    &__inner{
+    &__inner {
       padding-left: 35px;
       padding-right: 35px;
     }
 
-    &__address{
+    &__address {
       text-align: left;
     }
-
   }
-
 }
