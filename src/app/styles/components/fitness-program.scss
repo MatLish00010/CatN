@@ -84,7 +84,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $mobile + 1) and (max-width: $tablet) {
   .fitness-program {
     &__content {
       padding: 77px 60px 62px 52px;
@@ -140,7 +140,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet + 1) {
   .fitness-program {
     display: flex;
     justify-content: space-around;

@@ -69,14 +69,10 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $mobile + 1) and (max-width: $tablet) {
   .hero {
     background: none;
-    padding-left: 10%;
 
-    &:before {
-      display: none;
-    }
 
     &__wrap {
       text-align: start;
@@ -117,9 +113,11 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+
+@media (min-width: $tablet + 1) {
   .hero {
     z-index: 2;
+    background: none;
 
     &__heading {
       z-index: 2;

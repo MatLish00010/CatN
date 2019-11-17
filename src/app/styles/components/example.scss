@@ -81,7 +81,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $mobile + 1) and (max-width: $tablet) {
   .example {
     position: relative;
     border-top: 1px solid #e6e6e6;
@@ -136,7 +136,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet + 1) {
   .example {
     &__wrap {
       display: flex;

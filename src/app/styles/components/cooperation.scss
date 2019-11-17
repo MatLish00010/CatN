@@ -40,7 +40,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $mobile + 1) and (max-width: $tablet) {
   .cooperation {
     &__inner {
       padding: 63px 41px 59px;
@@ -63,7 +63,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet + 1) {
   .cooperation {
     position: relative;
 

@@ -21,7 +21,7 @@
   @include png-sprite($icon-logo-mobile-header);
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $mobile + 1) {
   .page-header {
     height: 900px;
     align-items: center;
@@ -42,8 +42,7 @@
   }
 }
 
-
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet) {
   .page-header {
     height: 700px;
     margin-bottom: 40px;
@@ -53,7 +52,7 @@
       position: absolute;
       z-index: 1;
       top: 0;
-      right: 0px;
+      right: 0;
       width: 50%;
       height: 697px;
       background-color: #65a93c;
