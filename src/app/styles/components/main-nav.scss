@@ -92,5 +92,18 @@
 @media (min-width: $tablet + 1) {
   .main-nav {
     padding-top: 20px;
+
+
+    &__wrapper {
+      display: flex;
+      justify-content: flex-end;
+      min-width: 550px;
+      margin: 0 auto;
+      margin-right: 20px;
+    }
+
+    &__toggle {
+      display: none;
+    }
   }
 }

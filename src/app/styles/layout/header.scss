@@ -42,9 +42,8 @@
   }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet + 1) {
   .page-header {
-    height: 700px;
     margin-bottom: 40px;
 
     &:after {
@@ -61,11 +60,20 @@
       background-size: auto 697px;
       background-position: right;
     }
-  }
 
-  .logo {
-    display: block;
-    @include png-sprite($icon-logo-desktop);
+    &--wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__logo--name {
+      display: none;
+    }
+
+    .logo {
+      display: block;
+      @include png-sprite($icon-logo-desktop);
+    }
   }
 }
 

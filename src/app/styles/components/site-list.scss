@@ -73,29 +73,40 @@
 
 @media (min-width: $tablet + 1) {
   .site-list {
-    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
 
+    width: 540px;
+    z-index: 5;
+
     &__item {
-      margin-right: 0;
+      margin-right: 32px;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
     &__item a {
+      padding: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      background: none;
       color: white;
-      padding-right: 31px;
-      padding-left: 31px;
+      border: none;
+      font-weight: 500;
     }
 
     &__item a[href] {
+
       &:hover {
-        color: white;
-        transition: 0.3s;
-        opacity: 0.5;
+        color: gray;
       }
 
       &:active {
-        color: white;
-        opacity: 1;
+        opacity: 0.3;
       }
     }
 
