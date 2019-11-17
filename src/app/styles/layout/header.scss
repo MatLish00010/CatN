@@ -10,23 +10,23 @@
   }
 }
 
-.logo{
+.logo {
   display: block;
   @include png-sprite($icon-logo-mobile);
-  }
+}
 
-.name{
+.name {
   display: block;
   position: relative;
   @include png-sprite($icon-logo-mobile-header);
 }
 
-@media  (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .page-header {
     height: 900px;
     align-items: center;
 
-    &--wrap{
+    &--wrap {
       display: flex;
       justify-content: space-between;
     }
@@ -44,11 +44,11 @@
 
 
 @media (min-width: $desktop-width) {
-  .page-header{
+  .page-header {
     height: 700px;
     margin-bottom: 40px;
 
-    &:after{
+    &:after {
       content: "";
       position: absolute;
       z-index: 1;
@@ -64,7 +64,7 @@
     }
   }
 
-  .logo{
+  .logo {
     display: block;
     @include png-sprite($icon-logo-desktop);
   }

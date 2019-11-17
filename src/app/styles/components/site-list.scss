@@ -1,11 +1,11 @@
-.site-list{
+.site-list {
   font-weight: bold;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.site-list a{
+.site-list a {
   display: block;
   padding: 12px 21px 13px;
 
@@ -20,13 +20,13 @@
   border-top: 1px solid gray;
 }
 
-.site-list a[href]{
-  &:active{
+.site-list a[href] {
+  &:active {
     color: gray;
   }
 }
 
-@media  (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .site-list {
     display: flex;
     flex-wrap: wrap;

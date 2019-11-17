@@ -1,9 +1,9 @@
-.main-nav{
+.main-nav {
   position: relative;
   background-color: #fff;
 }
 
-.visually-hidden:not(:focus):not(:active){
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -15,7 +15,7 @@
   overflow: hidden;
 }
 
-.main-nav__toggle{
+.main-nav__toggle {
   width: 24px;
   padding: 0;
   border: 0;
@@ -23,7 +23,7 @@
   cursor: pointer;
 }
 
-.toggle-on{
+.toggle-on {
   width: 24px;
   padding: 0;
   border: 0;
@@ -32,7 +32,7 @@
   @include png-sprite($icon-m-close);
 }
 
-.toggle-off{
+.toggle-off {
   width: 24px;
   padding: 0;
   border: 0;
@@ -68,7 +68,7 @@
   }
 }
 
-@media  (min-width:$tablet-width) {
+@media (min-width: $tablet-width) {
   .main-nav {
     width: 100%;
     margin: 0;
@@ -90,7 +90,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav{
+  .main-nav {
     padding-top: 20px;
   }
 }
