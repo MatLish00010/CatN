@@ -96,7 +96,35 @@
 
 @media (min-width: $tablet + 1) {
 
-  .footer__wrap {
-    justify-content: space-between;
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+    &__wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .social-list {
+    border: none;
+
+    &__link {
+      &--vk {
+        display: inline-block;
+        @include png-sprite($icon-t-vk);
+      }
+
+      &--inst {
+        display: inline-block;
+        @include png-sprite($icon-t-insta);
+      }
+
+      &--fb {
+        display: inline-block;
+        @include png-sprite($icon-t-fb);
+      }
+    }
   }
 }

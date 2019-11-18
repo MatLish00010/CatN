@@ -26,12 +26,12 @@
     height: 900px;
     align-items: center;
 
-    &--wrap {
+    &__wrap {
       display: flex;
       justify-content: space-between;
     }
 
-    &__logo--name {
+    &__logo-name {
       display: none;
     }
 
@@ -61,12 +61,12 @@
       background-position: right;
     }
 
-    &--wrap {
+    &__wrap {
       display: flex;
       justify-content: space-between;
     }
 
-    &__logo--name {
+    &__logo-name {
       display: none;
     }
 

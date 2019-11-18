@@ -92,7 +92,7 @@
     }
 
     &__btn-wrap {
-      justify-content: start;
+      justify-content: flex-start;
     }
 
     &__btn {
@@ -127,11 +127,32 @@
         position: absolute;
         z-index: 2;
         top: 100px;
-        left: 32%;
+        left: 50%;
+        transform: translate(-50%);
         width: 509px;
         height: 492px;
         background: url(../../images/big_img/index-can.png) no-repeat;
       }
+    }
+    
+    &__wrap{
+      text-align: left;
+    }
+
+    &__heading h1 {
+      color: black;
+      font-size: 49px;
+      width: 356px;
+      line-height: 1;
+      font-weight: 500;
+    }
+
+    &__comment p {
+      color: black;
+    }
+
+    &__btn-wrap {
+      justify-content: flex-start;
     }
 
     &__img--cat-energy {
