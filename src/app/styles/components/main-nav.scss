@@ -59,6 +59,10 @@
       color: gray;
     }
   }
+
+  &--opened {
+    margin: auto -20px;
+  }
 }
 
 @media (max-width: $mobile) {

@@ -1,28 +1,24 @@
 .hero {
-  position: relative;
-  overflow: hidden;
-  height: 524px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-size: 100% 305px;
-  background: url(../../images/big_img/index-background-mobile.jpg) no-repeat center top;
-
+  margin: auto -20px;
+  padding-bottom: 250px;
 
   &__picture {
     margin: 0 auto;
     @include png-sprite($icon-index-can-mobile);
     border: none;
-    user-select: none;
-    outline: none;
+    transform: translateY(60px);
   }
 
   &__wrap {
+    background: #64a83b url(../../images/big_img/index-background-mobile.jpg) no-repeat center bottom;
     z-index: 1;
     text-align: center;
+    max-height: 322px;
   }
 
   &__heading h1 {
+    margin: 0;
+    padding-top: 20px;
     font-size: 34px;
     font-weight: 400;
   }
@@ -35,13 +31,11 @@
   &__btn-wrap {
     display: flex;
     justify-content: center;
-
   }
 
   &__btn {
-    position: relative;
     z-index: 1;
-    height: 25px;
+    height: auto;
 
     display: block;
 
@@ -52,8 +46,8 @@
     text-align: center;
     text-transform: uppercase;
     padding: 10px 30px;
-    width: 250px;
-
+    width: auto;
+    transform: translateY(70px);
 
     background-color: #68b738;
     border: none;
