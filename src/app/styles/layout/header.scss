@@ -40,8 +40,6 @@
 
 @media (min-width: $tablet + 1) {
   .page-header {
-    margin-bottom: 40px;
-
     &:after {
       content: "";
       position: absolute;

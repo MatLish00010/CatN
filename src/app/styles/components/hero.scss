@@ -65,12 +65,15 @@
 @media (min-width: $mobile + 1) and (max-width: $tablet) {
   .hero {
     background: none;
-    padding-bottom: 300px;
+    padding-bottom: 50px;
+    margin: auto 20px;
     
     &__wrap {
       text-align: start;
       display: flex;
       flex-direction: column;
+      background: none;
+      max-height: 829px;
     }
 
     &__picture {
@@ -111,11 +114,9 @@
   .hero {
     z-index: 2;
     background: none;
-    padding-bottom: 200px;
+    padding-bottom: 440px;
 
     &__heading {
-      z-index: 2;
-
       &:after {
         content: "";
         position: absolute;
@@ -131,6 +132,7 @@
     
     &__wrap{
       text-align: left;
+      background: none;
     }
 
     &__heading h1 {
