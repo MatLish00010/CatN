@@ -1,35 +1,49 @@
-.fitness-program {
-
-  &__content {
+.benefits {
+  &__item {
     background-color: #f2f2f2;
     max-height: 326px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-
+    justify-content: space-between;
     margin-bottom: 30px;
+    padding: 20px 20px;
   }
 
-  &__illustration {
+  &__icon--cat {
     position: relative;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: #68b738;
     transform: translateX(36px);
+
+    &:before {
+      content: "";
+      position: absolute;
+      @include png-sprite($icon-cat-mobile);
+      transform: translateX(5px);
+    }
   }
 
-  &__illustration-cat {
-    @include png-sprite($icon-cat-mobile);
-    transform: translate(9px, -1px);
+  &__icon--tiger {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68b738;
+    transform: translateX(36px);
+
+    &:before {
+      content: "";
+      position: absolute;
+      @include png-sprite($icon-tiger-mobile);
+      top: 50%;
+      transform: translate(-10px, -50%);
+    }
   }
 
-  &__illustration-tiger {
-    @include png-sprite($icon-tiger-mobile);
-    transform: translate(-12px, 13px);
-  }
-
-  &__content h2 {
+  &__item h2 {
     font-size: 24px;
     line-height: 37px;
     font-weight: 400;
@@ -40,31 +54,22 @@
     margin-bottom: 12px;
   }
 
-  &__content-text {
+  &__text {
     min-width: 260px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #d9d9d9;
+
+    & p {
+      font-size: 14px;
+      color: #444444;
+      font-family: "Arial", sans-serif;
+      line-height: 20px;
+    }
   }
 
-  &__content-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-
-    height: 300px;
-  }
-
-  &__content p {
-    font-size: 14px;
-    color: #444444;
-    font-family: "Arial", sans-serif;
-    line-height: 20px;
-  }
-
-  &__content a {
+  &__item a {
     position: relative;
     font-size: 16px;
     color: #111111;
@@ -78,37 +83,51 @@
       position: absolute;
       content: "";
       @include png-sprite($icon-arrow-mobile);
-      top: 40%;
-      transform: translateX(43%);
+      top: 50%;
+      transform: translate(43%, -50%);
     }
   }
 }
 
 @media (min-width: $mobile + 1) and (max-width: $tablet) {
-  .fitness-program {
-    &__content {
+  .benefits {
+    &__item {
       padding: 77px 60px 62px 52px;
       margin-top: 0;
       margin-bottom: 31px;
     }
 
+    &__icon--cat {
+      position: absolute;
+      transform: translate(420px, 0px);
+      width: 220px;
+      height: 220px;
 
-    &__content-wrap {
-      position: relative;
-      height: auto;
+      &:before {
+        content: "";
+        position: absolute;
+        @include png-sprite($icon-cat-tablet);
+        top: 50%;
+        transform: translate(50px, -50%);
+      }
     }
 
-    &__illustration-cat {
-      @include png-sprite($icon-cat-tablet);
-      transform: translate(30px, -6px);
+    &__icon--tiger {
+      position: absolute;
+      transform: translate(420px, 0px);
+      width: 220px;
+      height: 220px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        @include png-sprite($icon-tiger-tablet);
+        top: 50%;
+        transform: translate(-30px, -50%);
+      }
     }
 
-    &__illustration-tiger {
-      @include png-sprite($icon-tiger-tablet);
-      transform: translate(-45px, 46px);
-    }
-
-    &__illustration {
+    &__icon {
       position: absolute;
       top: 15px;
       right: 0;
@@ -117,35 +136,37 @@
       margin-left: auto;
     }
 
-    &__content-text {
+    &__text {
       width: 325px;
       border: none;
       padding: 0;
     }
 
-    &__content a {
+    &__item a {
       width: 100%;
       position: relative;
       display: flex;
       align-items: center;
 
       &:after {
-        transform: translateX(380%);
+        transform: translate(93px, -50%);
       }
     }
 
-    &__content h2 {
+    &__item h2 {
       font-size: 37px;
     }
   }
 }
 
 @media (min-width: $tablet + 1) {
-  .fitness-program {
-    display: flex;
-    justify-content: space-around;
+  .benefits {
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+    }
 
-    &__content {
+    &__item {
       width: 47%;
       height: auto;
       padding-right: 52px;
@@ -153,24 +174,19 @@
       padding-bottom: 62px;
       margin-top: 28px;
       margin-bottom: 0;
+
+      &:first-child {
+        margin-right: 15px;
+      }
     }
 
-    &__item {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    &__content--accumulation {
-      margin-left: 50px;
-    }
-
-    &__content-wrap {
+    &__wrap {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
     }
 
-    &__illustration {
+    &__icon {
       position: relative;
       top: 0;
       width: 100px;
@@ -179,42 +195,23 @@
       margin-top: 0;
     }
 
-    &__illustration-cat {
-      @include png-sprite($icon-cat-desktop);
-      transform: translate(21px, -1px);
-    }
-
-    &__illustration-tiger {
-      @include png-sprite($icon-tiger-desktop);
-      transform: translate(-21px, 28px);
-    }
-
-
-    &__content-wrap h2 {
-      width: calc(100% - 162px);
-      margin-bottom: 0;
-    }
-
-    &__content-text {
+    &__text {
       width: 100%;
-    }
+      border: none;
 
-    &__content-text p {
-      width: 100%;
-      padding-bottom: 32px;
-      margin-top: 40px;
-    }
-
-
-    &__content a {
-      width: 140px;
-      font-size: 24px;
-
-      &:after {
-        transform: translateX(555%);
+      & p {
+        width: 100%;
+        padding-bottom: 32px;
+        margin-top: 40px;
       }
     }
+
+    &__item a {
+      width: 140px;
+      font-size: 24px;
+    }
   }
+
 }
 
 
