@@ -1,14 +1,13 @@
 .hero {
   position: relative;
+  overflow: hidden;
   height: 524px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: url(../../images/big_img/index-background-mobile.jpg) no-repeat;
   background-size: 100% 305px;
-  background-position: center top;
+  background: url(../../images/big_img/index-background-mobile.jpg) no-repeat center top;
 
-  padding-bottom: 20px;
 
   &__picture {
     margin: 0 auto;
@@ -72,8 +71,8 @@
 @media (min-width: $mobile + 1) and (max-width: $tablet) {
   .hero {
     background: none;
-
-
+    padding-bottom: 300px;
+    
     &__wrap {
       text-align: start;
       display: flex;
@@ -118,6 +117,7 @@
   .hero {
     z-index: 2;
     background: none;
+    padding-bottom: 200px;
 
     &__heading {
       z-index: 2;

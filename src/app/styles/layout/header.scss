@@ -17,13 +17,11 @@
 
 .name {
   display: block;
-  position: relative;
   @include png-sprite($icon-logo-mobile-header);
 }
 
 @media (min-width: $mobile + 1) {
   .page-header {
-    height: 900px;
     align-items: center;
 
     &__wrap {
