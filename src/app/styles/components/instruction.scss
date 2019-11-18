@@ -8,7 +8,7 @@
     font-weight: 400;
     color: #111111;
     margin-top: 0;
-    margin-bottom: 27px;
+    padding-bottom: 30px;
   }
 
   &__list {
@@ -63,7 +63,6 @@
   .instruction {
     &__title {
       font-size: 60px;
-      margin-bottom: 70px;
     }
 
     &__list {
@@ -81,6 +80,7 @@
       align-items: flex-start;
       width: 40%;
       max-width: 300px;
+      padding-top: 40px;
       padding-bottom: 50px;
       margin-bottom: 85px;
 
@@ -151,12 +151,12 @@
 
     &__item {
       width: 245px;
+      padding-top: 40px;
     }
   }
   .instruction {
     &__title {
       font-size: 60px;
-      margin-bottom: 70px;
     }
 
     &__list {

@@ -1,7 +1,6 @@
 .benefits {
   &__item {
     background-color: #f2f2f2;
-    max-height: 326px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -167,7 +166,7 @@
     }
 
     &__item {
-      width: 47%;
+      width: 50%;
       height: auto;
       padding-right: 52px;
       padding-top: 48px;
@@ -196,18 +195,16 @@
     }
 
     &__text {
-      width: 100%;
       border: none;
 
       & p {
-        width: 100%;
         padding-bottom: 32px;
         margin-top: 40px;
       }
     }
 
     &__item a {
-      width: 140px;
+      padding-right:35px;
       font-size: 24px;
     }
   }
