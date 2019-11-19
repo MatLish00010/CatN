@@ -77,71 +77,39 @@
       position: relative;
       display: flex;
       flex-wrap: wrap;
+      flex-direction: column;
       align-items: flex-start;
       width: 40%;
       max-width: 300px;
       padding-top: 40px;
       padding-bottom: 50px;
       margin-bottom: 85px;
-
-      &--1 {
-        &:before {
-          position: absolute;
-          content: "1";
-          color: #f2f2f2;
-          font-size: 281px;
-          z-index: -1;
-          left: 30%;
-          transform: translateY(50px);
-        }
-      }
-
-      &--2 {
-        &:before {
-          position: absolute;
-          content: "2";
-          color: #f2f2f2;
-          font-size: 281px;
-          z-index: -1;
-          left: 30%;
-          transform: translateY(50px);
-        }
-      }
-
-      &--3 {
-        &:before {
-          position: absolute;
-          content: "3";
-          color: #f2f2f2;
-          font-size: 281px;
-          z-index: -1;
-          left: 30%;
-          transform: translateY(50px);
-        }
-      }
-
-      &--4 {
-        &:before {
-          position: absolute;
-          content: "4";
-          color: #f2f2f2;
-          font-size: 281px;
-          z-index: -1;
-          left: 30%;
-          transform: translateY(50px);
-        }
-      }
     }
 
-    &__icon {
-      margin-bottom: 34px;
+    &__icon{
+      margin-bottom: 20px;
     }
 
-    &__text {
-      width: 255px;
+    .instruction__number{
+      position: absolute;
+      z-index: -1;
+      font-size: 281px;
+      color: #f2f2f2;
+      top: 50%;
+      transform: translate(110px , -50%);
     }
+
+  }
+
+  &__icon {
+    margin-bottom: 34px;
+  }
+
+  &__text {
+    width: 255px;
   }
 }
+
 
 @media (min-width: $tablet + 1) {
   .instruction {
