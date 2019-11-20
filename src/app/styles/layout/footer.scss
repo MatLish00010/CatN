@@ -32,20 +32,42 @@
   }
 
   &__link {
+    padding: 20px;
 
     &--vk {
-      display: inline-block;
-      @include png-sprite($icon-vk);
+      position: relative;
+
+      &:before {
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        position: absolute;
+        @include png-sprite($icon-vk);
+      }
     }
 
     &--inst {
-      display: inline-block;
-      @include png-sprite($icon-insta);
+      position: relative;
+
+      &:before {
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        position: absolute;
+        @include png-sprite($icon-insta);
+      }
     }
 
     &--fb {
-      display: inline-block;
-      @include png-sprite($icon-fb);
+      position: relative;
+
+      &:before {
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        position: absolute;
+        @include png-sprite($icon-fb);
+      }
     }
   }
 }
@@ -78,17 +100,29 @@
     &__link {
       &--vk {
         display: inline-block;
-        @include png-sprite($icon-t-vk);
+
+        &:before {
+          content: "";
+          @include png-sprite($icon-t-vk);
+        }
       }
 
       &--inst {
         display: inline-block;
-        @include png-sprite($icon-t-insta);
+
+        &:before {
+          content: "";
+          @include png-sprite($icon-t-insta);
+        }
       }
 
       &--fb {
         display: inline-block;
-        @include png-sprite($icon-t-fb);
+
+        &:before {
+          content: "";
+          @include png-sprite($icon-t-fb);
+        }
       }
     }
   }
@@ -109,22 +143,5 @@
 
   .social-list {
     border: none;
-
-    &__link {
-      &--vk {
-        display: inline-block;
-        @include png-sprite($icon-t-vk);
-      }
-
-      &--inst {
-        display: inline-block;
-        @include png-sprite($icon-t-insta);
-      }
-
-      &--fb {
-        display: inline-block;
-        @include png-sprite($icon-t-fb);
-      }
-    }
   }
 }
