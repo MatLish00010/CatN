@@ -32,19 +32,19 @@
     height: 60px;
     background-color: #68b738;
 
-    &-img--1 {
+    &--leaf {
       @include png-sprite($icon-advantage-1);
     }
 
-    &-img--2 {
+    &--powder {
       @include png-sprite($icon-andvantage-2);
     }
 
-    &-img--3 {
+    &--food {
       @include png-sprite($icon-advantage-3);
     }
 
-    &-img--4 {
+    &--time {
       @include png-sprite($icon-advantage-4);
     }
   }
