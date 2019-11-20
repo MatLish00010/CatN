@@ -70,8 +70,9 @@
     &__wrap {
       position: absolute;
       z-index: 1;
-      top: 95px;
+      top: 50%;
       left: 40px;
+      transform: translateY(-50%);
       width: 570px;
       background-color: #fff;
     }
