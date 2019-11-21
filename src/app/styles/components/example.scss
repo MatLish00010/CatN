@@ -142,7 +142,7 @@
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: flex-start;
-      height: 600px;
+      max-height: 630px;
     }
 
     &__title {
@@ -172,7 +172,7 @@
     &__caption {
       display: flex;
       justify-content: space-between;
-      width: 325px;
+      max-width: 325px;
       text-align: left;
     }
   }

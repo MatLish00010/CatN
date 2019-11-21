@@ -14,7 +14,7 @@
   "destinationPath": "public",
   "temporaryPath": "src/.tmp",
   "template_engine": "html",
-  "javascript_libraries": [],
+  "javascript_libraries": ["./node_modules/jquery/dist/jquery.min.js"],
   "use_babel": true,
   "minify_images": true,
   "css_source_maps": true,
