@@ -1,15 +1,24 @@
 .cd-image-container {
   position: relative;
-  width: 90%;
   max-width: 768px;
-  margin: 0em auto;
+  width: 90%;
+  margin: 0 auto;
 }
+
 .cd-image-container img {
   display: block;
 }
 
-.move{
-  transform: translateX(120px)
+.cats-image {
+  background: #f2f2f2;
+  width: 100%;
+  max-height: 600px;
+}
+
+@media (min-width: $mobile + 1) and (max-width: $tablet) {
+  .cats-image {
+    background: #fff;
+  }
 }
 
 .cd-image-label {
@@ -30,9 +39,11 @@
   -moz-transition: -moz-transform 0.3s 0.7s, opacity 0.3s 0.7s;
   transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
 }
+
 .cd-image-label.is-hidden {
   visibility: hidden;
 }
+
 .is-visible .cd-image-label {
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -58,6 +69,7 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 .cd-resize-img img {
   position: absolute;
   left: 0;
@@ -67,10 +79,12 @@
   width: auto;
   max-width: none;
 }
+
 .cd-resize-img .cd-image-label {
   right: auto;
   left: 0;
 }
+
 .is-visible .cd-resize-img {
   width: 50%;
   /* bounce in animation of the modified image */
@@ -90,6 +104,7 @@
     width: 50%;
   }
 }
+
 @-moz-keyframes cd-bounce-in {
   0% {
     width: 0;
@@ -101,6 +116,7 @@
     width: 50%;
   }
 }
+
 @keyframes cd-bounce-in {
   0% {
     width: 0;
@@ -112,6 +128,7 @@
     width: 50%;
   }
 }
+
 .cd-handle {
   position: absolute;
   height: 44px;
@@ -132,10 +149,12 @@
   -o-transform: translate3d(0, 0, 0) scale(0);
   transform: translate3d(0, 0, 0) scale(0);
 }
+
 .cd-handle.draggable {
   /* change background color when element is active */
   background-color: #445b7c;
 }
+
 .is-visible .cd-handle {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0) scale(1);

@@ -99,6 +99,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding-bottom: 20px;
 
       &-list {
         width: 366px;
@@ -107,7 +108,7 @@
 
       &-item {
         width: 162px;
-        padding-bottom: 19px;
+        padding-bottom: 30px;
       }
 
       &-value {
@@ -153,12 +154,11 @@
 
     &__text {
       margin-bottom: 68px;
-      width: 450px;
+      max-width: 450px;
     }
 
     &__stats {
       flex-wrap: wrap;
-      width: 435px;
 
       &-list {
         width: 366px;
