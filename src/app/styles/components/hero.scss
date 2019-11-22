@@ -2,14 +2,11 @@
   margin: auto -20px;
   padding-bottom: 250px;
 
-  &__picture {
-    margin: 0 auto;
-    @include png-sprite($icon-index-can-mobile);
-    border: none;
-    transform: translateY(60px);
-  }
 
-  &__wrap {
+
+
+
+  /*&__wrap {
     background: #64a83b url(../../images/big_img/index-background-mobile.jpg) no-repeat center bottom;
     z-index: 1;
     text-align: center;
@@ -146,4 +143,4 @@
       display: none;
     }
   }
-}
+}*/
