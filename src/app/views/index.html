@@ -52,20 +52,21 @@
             </div>
         </nav>
     </div>
-    <div class="hero">
-        <div class="hero__wrap">
-            <div class="hero__heading">
-                <h1>Функциональное питание для котов</h1>
-            </div>
-            <div class="hero__comment">
-                <p>Занялся собой? Займись котом!</p>
-            </div>
-            <div class="hero__picture"></div>
-            <div class="hero__btn-wrap">
-                <a class="hero__btn" href="#">Подобрать программу</a>
-            </div>
+    <section class="hero">
+        <div class="hero__wrap container">
+            <h2 class="hero__container hero__title">Функциональное<br> питание для котов</h2>
+            <p class="hero__content hero__text">Занялся собой? Займись котом!</p>
+            <picture class="hero__img-wrap">
+                <source media="(min-width: 1200px)" srcset="../images/big_img/index-can-desktop@1x.png 1x,
+                ../images/big_img/index-background-desktop@2x.jpg 2px">
+                <source media="(min-width: 768px)" srcset="../images/big_img/index-can-tablet@1x.jpg 1x,
+                ../images/big_img/index-can-tablet@2x.jpg 2x">
+                <img class="hero__img" src="../images/big_img/index-can-mobile@1x.png"
+                     srcset="../images/big_img/index-can-mobile@2x.png 2x" alt="Красивая упаковка">
+            </picture>
+            <a class="hero__content hero__btn btn" href="#">Подобрать программу</a>
         </div>
-    </div>
+    </section>
 </header>
 
 <main class="main">

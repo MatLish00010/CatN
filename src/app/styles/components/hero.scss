@@ -116,20 +116,6 @@
     background: none;
     padding-bottom: 440px;
 
-    &__heading {
-      &:after {
-        content: "";
-        position: absolute;
-        z-index: 2;
-        top: 100px;
-        left: 50%;
-        transform: translate(-50%);
-        width: 509px;
-        height: 492px;
-        background: url(../../images/big_img/index-can.png) no-repeat;
-      }
-    }
-    
     &__wrap{
       text-align: left;
       background: none;

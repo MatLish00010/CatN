@@ -1,55 +1,76 @@
 .page-header {
-  display: block;
+  position: relative;
 
-  &__top {
+  @include desktop {
+    &--index {
+      z-index: 0;
+
+      &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 50%;
+        background-color: #63a73a;
+        background-image: url("../../images/big_img/index-background-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: right center;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.page-header__wrap {
+  @include tablet {
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @include desktop {
+    padding-top: 52px;
   }
 }
 
-@media (min-width: $mobile + 1) {
-  .page-header {
-    &__wrap {
-      display: flex;
-      justify-content: space-between;
-    }
+.page-header__logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  height: 45px;
+  box-sizing: content-box;
 
-    &__logo-name {
-      display: none;
-    }
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.8;
   }
 }
 
-@media (min-width: $tablet + 1) {
-  .page-header {
-    &:after {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 697px;
-      background-color: #65a93c;
-      background-image: url(../../images/big_img/index-background-desktop.png);
-      background-repeat: no-repeat;
-      background-size: auto 697px;
-      background-position: right;
-    }
+.page-header__logo-img {
+  width: 33px;
+  height: 38px;
 
-    &__wrap {
-      display: flex;
-      justify-content: space-between;
-    }
+  @include tablet {
+    width: 173px;
+    height: 59px;
+  }
 
-    &__logo-name {
-      display: none;
-    }
+  @include desktop {
+    width: 202px;
+    height: 60px;
   }
 }
+
+
 
 
 
