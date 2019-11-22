@@ -9,6 +9,114 @@
     <title>Document</title>
 </head>
 <body>
-    
+<header class="page-header">
+    <div class="page-header__wrap container">
+        <a href="/" class="page-header__logo">
+            <picture>
+                <source media="(min-width: 1300px)" srcset="../images/iconic/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="../images/iconic/logo-tablet.svg">
+                <img class="page-header__logo-img" src="../images/iconic/logo-mobile.svg"
+                     alt="Логотип Cat-Energy" width="33" height="38">
+            </picture>
+            <svg class="page-header__logo-title" xmlns="http://www.w3.org/2000/svg" width="101" height="18"
+                 aria-label="Cat Energy">
+                <use xlink:href="#logo-mobile-header"></use>
+            </svg>
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle main-nav__toggle--cross" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__site-list main-nav__site-list--catalog">
+                    <li class="main-nav__item main-nav__item--active">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Каталог продукции</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Подбор программы</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="catalog">
+        <div class="catalog__head container">
+            <h2 class="catalog__title">Каталог продукции</h2>
+        </div>
+
+        <div class="catalog__list cantainer">
+            <article class="catalog__item product">
+                <div class="product__wrap">
+                    <a href="#" class="product__link-img">
+                        <span class="product__img">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                        srcset="../images/big_img/chicken-small-desktop@1x.png 1x,
+                                        ../images/big_img/chicken-small-desktop@2x.png 2x">
+                                <source media="(min width: 768px)"
+                                        srcset="../images/big_img/chicken-small-desktop@1x.png 1px,
+                                         ../images/big_img/chicken-small-desktop@2x.png 2x">
+                                <img src="../images/big_img/chicken-small-mobile@1x.jpg 1x,"
+                                     srcset="../images/big_img/chicken-small-mobile@2x.jpg 2x" alt="Cat eat"
+                                     width="140" height="144">
+                            </picture>
+                        </span>
+                    </a>
+
+                    <div class="product__content">
+                        <a href="#" class="product__link-title">
+                            <h3 class="product__title">Cat Energy 500г</h3>
+                        </a>
+
+                        <table class="product__info">
+                            <tr>
+                                <td>Объём</td>
+                                <td>500 г</td>
+                            </tr>
+                            <tr>
+                                <td>Вкус</td>
+                                <td>Курица</td>
+                            </tr>
+                            <tr>
+                                <td>Цена</td>
+                                <td>700 Р.</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <a href="#" class="product__btn btn">Заказать</a>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
+<script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+    var navTogglebtn = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+    navTogglebtn.classList.remove('.main-nav__toggle');
+
+
+    navToggle.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navTogglebtn.classList.remove('main-nav__toggle');
+            navMain.classList.add('main-nav--opened');
+            navTogglebtn.classList.add('main-nav__toggle--cross');
+        } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+            navTogglebtn.classList.add('main-nav__toggle');
+            navTogglebtn.classList.remove('main-nav__toggle--cross');
+        }
+    });
+</script>
 </body>
 </html>
