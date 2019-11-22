@@ -10,16 +10,6 @@
   }
 }
 
-.logo {
-  display: block;
-  @include png-sprite($icon-logo-mobile);
-}
-
-.name {
-  display: block;
-  @include png-sprite($icon-logo-mobile-header);
-}
-
 @media (min-width: $mobile + 1) {
   .page-header {
     &__wrap {
@@ -29,11 +19,6 @@
 
     &__logo-name {
       display: none;
-    }
-
-    .logo {
-      display: block;
-      @include png-sprite($icon-logo-tablet);
     }
   }
 }
@@ -62,10 +47,6 @@
 
     &__logo-name {
       display: none;
-    }
-
-    .logo {
-      @include png-sprite($icon-logo-desktop);
     }
   }
 }
