@@ -231,7 +231,5 @@
 }
 
 .main-nav__item--active-catalog{
-  @include desktop{
-    border-bottom: 2px solid #68b738;
-  }
+  border-bottom: 2px solid #68b738; 
 }
