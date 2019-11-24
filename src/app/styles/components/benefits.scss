@@ -160,7 +160,7 @@
 
 @media (min-width: $tablet + 1) {
   .benefits {
-    &-inner {
+    &__inner {
       display: flex;
       justify-content: space-between;
     }
