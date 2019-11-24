@@ -63,8 +63,10 @@
 
     <section class="benefits">
         <div class="container">
+<!--            todo поменять -inner на __inner-->
             <div class="benefits-inner">
                 <div class="benefits__item">
+<!--                   todo используешь модификатор без элемента и дублируешь css из-за этого -->
                     <div class="benefits__icon--cat"></div>
                     <h2>Похудение</h2>
                     <div class="benefits__text">
@@ -90,8 +92,9 @@
         <div class="container">
             <h2 class="instruction__title">Как это работает</h2>
             <ul class="instruction__list">
-                <li class="instruction__item instruction__item--1">
+                <li class="instruction__item">
                     <div class="instruction__icon">
+                        <!--                   todo используешь модификатор без элемента и дублируешь css из-за этого -->
                         <div class="instruction__icon--leaf"></div>
                     </div>
                     <div class="instruction__number">
@@ -100,7 +103,7 @@
                     <p class="instruction__text">Функциональное питание содержит только
                         полезные питательные вещества.</p>
                 </li>
-                <li class="instruction__item instruction__item--2">
+                <li class="instruction__item">
                     <div class="instruction__icon">
                         <div class="instruction__icon--powder"></div>
                     </div>
@@ -110,7 +113,7 @@
                     <p class="instruction__text">Выпускается в виде порошка, который нужно лишь залить кипятком и
                         готово.</p>
                 </li>
-                <li class="instruction__item instruction__item--3">
+                <li class="instruction__item">
                     <div class="instruction__icon">
                         <div class="instruction__icon--food"></div>
                     </div>
@@ -120,7 +123,7 @@
                     <p class="instruction__text">Замените один-два приема обычной еды на наше фунцкциональное
                         питание.</p>
                 </li>
-                <li class="instruction__item instruction__item--4">
+                <li class="instruction__item">
                     <div class="instruction__icon">
                         <div class="instruction__icon--time"></div>
                     </div>
@@ -143,6 +146,7 @@
                     привычек и по-прежнему спит по 16 часов в день. </p>
                 <div class="example__stats">
                     <div class="example__stats-list">
+<!--                        todo weight и days должен быть как модификатор с двумя минусами -->
                         <div class="example__stats-item example__stats-item-weight">
                             <h3 class="example__stats-value">5 кг</h3>
                             <p class="example__stats-title">Снижение<br>веса</p>
@@ -174,6 +178,7 @@
 
     <section class="cooperation cooperation--index">
         <div class="cooperation__wrap">
+<!--            todo вынести блок для таблета и для мобилы наверх и скрывать его на десктопе а этот блок поправить и убрать маргин :)-->
             <div class="container">
                 <div class="cooperation__inner">
                     <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
@@ -189,7 +194,6 @@
             <script type="text/javascript" charset="utf-8" async
                     src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c80899cb7b8347d15ee8a216ebab2d39b49b4b6a5180ef7fcefa1043848b563&amp;width=100%25&amp;height=418&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
-
     </section>
 </main>
 <footer class="footer">
@@ -199,15 +203,15 @@
                 <a href="index.html" class="name"></a>
             </div>
             <div class="footer__block footer__block--social">
-                <ul class="footer__list social-list">
+                <ul class="social-list">
                     <li class="social-list__item">
-                        <a href="" class="social-list__link social-list__link--vk"></a>
+                        <a href="#" class="social-list__link social-list__link--vk"></a>
                     </li>
                     <li class="social-list__item">
-                        <a href="" class="social-list__link social-list__link--inst"></a>
+                        <a href="#" class="social-list__link social-list__link--inst"></a>
                     </li>
                     <li class="social-list__item">
-                        <a href="" class="social-list__link social-list__link--fb"></a>
+                        <a href="#" class="social-list__link social-list__link--fb"></a>
                     </li>
                 </ul>
             </div>
@@ -216,7 +220,6 @@
             </div>
         </div>
     </div>
-
 </footer>
 
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>

@@ -75,6 +75,7 @@
       transform: translateY(-50%);
       width: 570px;
       background-color: #fff;
+      margin: 0 calc((100vw - 1300px) / 2);
     }
 
     &__inner {
