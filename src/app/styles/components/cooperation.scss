@@ -66,25 +66,34 @@
 @media (min-width: $tablet + 1) {
   .cooperation {
     position: relative;
+    background-color: #f1f1f1;
 
     &__wrap {
+      display: none;
       position: absolute;
       z-index: 1;
       top: 50%;
       left: 40px;
       transform: translateY(-50%);
       width: 570px;
-      background-color: #fff;
-      margin: 0 calc((100vw - 1300px) / 2);
+    }
+
+    &__map {
+      display: none;
     }
 
     &__inner {
-      padding-left: 35px;
-      padding-right: 35px;
-    }
-
-    &__address {
-      text-align: left;
+      &-desktop {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        width: 540px;
+        padding: 20px 35px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
   }
 }
