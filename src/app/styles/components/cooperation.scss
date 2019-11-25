@@ -38,6 +38,10 @@
     width: 100%;
     background-size: 320px 360px;
   }
+
+  &__wrap-desktop {
+    display: none;
+  }
 }
 
 @media (min-width: $mobile + 1) and (max-width: $tablet) {
@@ -59,6 +63,10 @@
       &-street {
         font-size: 18px;
       }
+    }
+
+    &__wrap-desktop {
+      display: none;
     }
   }
 }
