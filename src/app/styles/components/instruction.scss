@@ -32,19 +32,19 @@
     height: 60px;
     background-color: #68b738;
 
-    &--leaf {
+    &-leaf {
       @include png-sprite($icon-advantage-1);
     }
 
-    &--powder {
+    &-powder {
       @include png-sprite($icon-andvantage-2);
     }
 
-    &--food {
+    &-food {
       @include png-sprite($icon-advantage-3);
     }
 
-    &--time {
+    &-time {
       @include png-sprite($icon-advantage-4);
     }
   }
