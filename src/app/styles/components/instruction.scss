@@ -32,20 +32,32 @@
     height: 60px;
     background-color: #68b738;
 
-    &-leaf {
-      @include png-sprite($icon-advantage-1);
+    &--leaf {
+      &:before {
+        content: "";
+        @include png-sprite($icon-advantage-1);
+      }
     }
 
-    &-powder {
-      @include png-sprite($icon-andvantage-2);
+    &--powder {
+      &:before {
+        content: "";
+        @include png-sprite($icon-andvantage-2);
+      }
     }
 
-    &-food {
-      @include png-sprite($icon-advantage-3);
+    &--food {
+      &:before {
+        content: "";
+        @include png-sprite($icon-advantage-3);
+      }
     }
 
-    &-time {
-      @include png-sprite($icon-advantage-4);
+    &--time {
+      &:before {
+        content: "";
+        @include png-sprite($icon-advantage-4);
+      }
     }
   }
 

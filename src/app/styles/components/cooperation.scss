@@ -84,6 +84,10 @@
       left: 40px;
       transform: translateY(-50%);
       width: 570px;
+
+      &-desktop {
+        display: block;
+      }
     }
 
     &__map {
