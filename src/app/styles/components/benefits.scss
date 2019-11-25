@@ -9,14 +9,16 @@
     padding: 20px 20px;
   }
 
-  &__icon--cat {
+  &__icon {
     position: relative;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: #68b738;
     transform: translateX(36px);
+  }
 
+  &__icon--cat {
     &:before {
       content: "";
       position: absolute;
@@ -26,13 +28,6 @@
   }
 
   &__icon--tiger {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #68b738;
-    transform: translateX(36px);
-
     &:before {
       content: "";
       position: absolute;
@@ -91,17 +86,23 @@
 @media (min-width: $mobile + 1) and (max-width: $tablet) {
   .benefits {
     &__item {
+      position: relative;
       padding: 77px 60px 62px 52px;
       margin-top: 0;
       margin-bottom: 31px;
     }
 
-    &__icon--cat {
+    &__icon {
       position: absolute;
       transform: translate(420px, 0px);
       width: 220px;
       height: 220px;
+      background-color: #68b738;
+      top: 15px;
+      margin-left: auto;
+    }
 
+    &__icon--cat {
       &:before {
         content: "";
         position: absolute;
@@ -112,11 +113,6 @@
     }
 
     &__icon--tiger {
-      position: absolute;
-      transform: translate(420px, 0px);
-      width: 220px;
-      height: 220px;
-
       &:before {
         content: "";
         position: absolute;
@@ -124,15 +120,6 @@
         top: 50%;
         transform: translate(-30px, -50%);
       }
-    }
-
-    &__icon {
-      position: absolute;
-      top: 15px;
-      right: 0;
-      width: 202px;
-      height: 202px;
-      margin-left: auto;
     }
 
     &__text {
@@ -188,8 +175,6 @@
     &__icon {
       position: relative;
       top: 0;
-      width: 100px;
-      height: 100px;
       margin-left: 0;
       margin-top: 0;
     }
