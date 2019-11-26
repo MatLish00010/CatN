@@ -52,35 +52,37 @@
                     вашего кота</p>
             </section>
 
-            <fieldset class="form-section form-section--cat-info">
+            <div class="form-section form-section--cat-info">
+                <div class="form-section__wrap">
 
-                <div class="form-section__field">
-                    <label class="form-section__item">
-                        <span class="form-section__text">Имя:</span>
-                        <input type="text" name="Имя" placeholder="Барсик" maxlength="17"
-                               class="form-section__input">
-                    </label>
-                </div>
+                    <div class="form-section__field">
+                        <label class="form-section__item">
+                            <span class="form-section__text">Имя:</span>
+                            <input type="text" name="Имя" placeholder="Барсик" maxlength="17"
+                                   class="form-section__input">
+                        </label>
+                    </div>
 
-                <div class="form-section__field">
-                    <label class="form-section__item">
-                        <span class="form-section__text">Вес (кг):</span>
-                        <input type="text" name="Вес" placeholder="7" maxlength="7" class="form-section__input">
-                    </label>
-                </div>
+                    <div class="form-section__field">
+                        <label class="form-section__item">
+                            <span class="form-section__text">Вес (кг):</span>
+                            <input type="text" name="Вес" placeholder="7" maxlength="7" class="form-section__input">
+                        </label>
+                    </div>
 
-                <div class="form-section__field">
-                    <label class="form-section__item">
-                        <span class="form-section__text">Возраст (лет)</span>
-                        <input type="text" class="form-section__input" name="Возраст" placeholder="7" maxlength="5">
-                    </label>
+                    <div class="form-section__field">
+                        <label class="form-section__item">
+                            <span class="form-section__text">Возраст (лет)</span>
+                            <input type="text" class="form-section__input" name="Возраст" placeholder="7" maxlength="5">
+                        </label>
+                    </div>
                 </div>
 
                 <div class="form-section form-section--choose-program">
                     <ul class="form-section__list">
                         <li class="form-section__list-item">
                             <label class="form-section__item">
-                                <input type="radio" class="form-section__radio visually-hidden" name="Программа"
+                                <input type="radio" class="form-section__radio" name="Программа"
                                        value="Похудение" checked>
                                 <span class="form-section__text form-section__text--radio">Похудение</span>
                             </label>
@@ -88,14 +90,15 @@
 
                         <li class="form-section__list-item">
                             <label class="form-section__item">
-                                <input type="radio" class="form-section__radio visually-hidden" name="Программа" value="Набор массы">
+                                <input type="radio" class="form-section__radio" name="Программа"
+                                       value="Набор массы">
                                 <span class="form-section__text form-section__text--radio">Набор массы</span>
                             </label>
                         </li>
 
                         <li class="form-section__list-item">
                             <label class="form-section__item">
-                                <input type="radio" class="form-section__radio visually-hidden" name="Программа"
+                                <input type="radio" class="form-section__radio" name="Программа"
                                        value="Не знаю (Нужен ваш совет)">
                                 <span class="form-section__text form-section__text--radio">Не знаю
                                     (Нужен ваш совет)</span>
@@ -103,11 +106,11 @@
                         </li>
                     </ul>
                 </div>
-            </fieldset>
+            </div>
         </div>
 
         <fieldset class="form-section form-section--contacts container">
-            <h3 class="form-section__title">Контактные данные <br> (владельца кота)</h3>
+            <h3 class="form-section__title"><span>Контактные данные <br> (владельца кота)</span></h3>
             <div class="program-form__wrap container">
                 <div class="form-section__field">
                     <label class="form-section__item">
@@ -134,7 +137,7 @@
         </fieldset>
 
         <fieldset class="form-section form-section__comment container">
-            <h3 class="form-section__title">Комментарий</h3>
+            <h3 class="form-section__title"><span>Комментарий</span></h3>
             <div class="container">
                 <div class="form-section__field form-section__field--textarea">
                     <label class="form-section__item">
@@ -147,33 +150,34 @@
         </fieldset>
 
         <fieldset class="form-section form-section--extra container">
-            <h3 class="form-section__title form-section__title--extra">Дополнительно</h3>
+            <h3 class="form-section__title form-section__title--extra"><span>Дополнительно</span></h3>
             <div class="container">
                 <ul class="form-section__list form-section__list--checks">
                     <li class="form-section__list-item">
                         <label class="form-section__item">
-                            <input type="checkbox" class="form-section__checkbox visually-hidden" name="sweetener" checked>
+                            <input type="checkbox" class="form-section__checkbox" name="sweetener"
+                                   checked>
                             <span class="form-section__text form-section__text--checkbox">Сахарозаменитель</span>
                         </label>
                     </li>
 
                     <li class="form-section__list-item">
                         <label class="form-section__item">
-                            <input type="checkbox" class="form-section__checkbox visually-hidden" name="water">
+                            <input type="checkbox" class="form-section__checkbox" name="water">
                             <span class="form-section__text form-section__text--checkbox">Питьевая вода</span>
                         </label>
                     </li>
 
                     <li class="form-section__list-item">
                         <label class="form-section__item">
-                            <input type="checkbox" class="form-section__checkbox visually-hidden" name="milk">
+                            <input type="checkbox" class="form-section__checkbox" name="milk">
                             <span class="form-section__text form-section__text--checkbox">Молоко</span>
                         </label>
                     </li>
 
                     <li class="form-section__list-item">
                         <label class="form-section__item">
-                            <input type="checkbox" class="form-section__checkbox visually-hidden" name="vitamins">
+                            <input type="checkbox" class="form-section__checkbox" name="vitamins">
                             <span class="form-section__text form-section__text--checkbox">Витамины</span>
                         </label>
                     </li>
