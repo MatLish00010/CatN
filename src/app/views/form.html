@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+<header class="page-header">
+    <div class="page-header__wrap container">
+        <a href="/" class="page-header__logo">
+            <picture>
+                <source media="(min-width: 1300px)" srcset="../images/iconic/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="../images/iconic/logo-tablet.svg">
+                <img class="page-header__logo-img" src="../images/iconic/logo-mobile.svg"
+                     alt="Логотип Cat-Energy" width="33" height="38">
+            </picture>
+            <svg class="page-header__logo-title" xmlns="http://www.w3.org/2000/svg" width="101" height="18"
+                 aria-label="Cat Energy">
+                <use xlink:href="#logo-mobile-header"></use>
+            </svg>
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle main-nav__toggle--cross" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__site-list main-nav__site-list--catalog">
+                    <li class="main-nav__item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="main-nav__item main-nav__item--active-catalog">
+                        <a href="#">Каталог продукции</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#">Подбор программы</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+</body>
+</html>
