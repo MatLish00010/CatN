@@ -32,10 +32,10 @@
                     <li class="main-nav__item">
                         <a href="index.html">Главная</a>
                     </li>
-                    <li class="main-nav__item main-nav__item--active-catalog">
-                        <a href="#">Каталог продукции</a>
-                    </li>
                     <li class="main-nav__item">
+                        <a href="catalog.html">Каталог продукции</a>
+                    </li>
+                    <li class="main-nav__item main-nav__item--active-catalog">
                         <a href="#">Подбор программы</a>
                     </li>
                 </ul>
@@ -49,20 +49,222 @@
             <section class="program-form__info">
                 <h2 class="program-form__title">Подбор программы</h2>
                 <p class="program-form__text">Заполните анкету и мы подберем <br> программу питания для
-                вашего кота</p>
+                    вашего кота</p>
             </section>
 
             <fieldset class="form-section form-section--cat-info">
                 <div class="form-section__field">
                     <label class="form-section__item">
                         <span class="form-section__text">Имя:</span>
-                        <input type="text" name="Имя" placeholder="Барсик" maxlength="17"
-                               class="form-section__input">
+                        <input type="text" name="Имя" placeholder="Барсик" maxlength="17" class="form-section__input">
                     </label>
+                </div>
+
+                <div class="form-section__field">
+                    <label class="form-section__item">
+                        <span class="form-section__text">Вес (кг):</span>
+                        <input type="text" name="Вес" placeholder="7" maxlength="7" class="form-section__input">
+                    </label>
+                </div>
+
+                <div class="form-section__field">
+                    <label class="form-section__item">
+                        <span class="form-section__text">Возраст (лет)</span>
+                        <input type="text" class="form-section__input" name="Возраст" placeholder="7" maxlength="5">
+                    </label>
+                </div>
+
+                <div class="form-section form-section--choose-program">
+                    <ul class="form-section__list">
+                        <li class="form-section__list-item">
+                            <label class="form-section__item">
+                                <input type="radio" class="form-section__radio" name="Программа"
+                                       value="Похудение" checked>
+                                <span class="form-section__text form-section__text--radio">Похудение</span>
+                            </label>
+                        </li>
+
+                        <li class="form-section__list-item">
+                            <label class="form-section__item">
+                                <input type="radio" class="form-section__radio" name="Программа" value="Набор массы">
+                                <span class="form-section__text form-section__text--radio">Набор массы</span>
+                            </label>
+                        </li>
+
+                        <li class="form-section__list-item">
+                            <label class="form-section__item">
+                                <input type="radio" class="form-section__radio" name="Программа"
+                                       value="Не знаю (Нужен ваш совет)">
+                                <span class="form-section__text form-section__text--radio">Не знаю
+                                    (Нужен ваш совет)</span>
+                            </label>
+                        </li>
+                    </ul>
                 </div>
             </fieldset>
         </div>
+
+        <fieldset class="form-section form-section--contacts">
+            <h3 class="form-section__title">Контактные данные <br> (владельца кота)</h3>
+            <div class="program-form__wrap container">
+                <div class="form-section__field">
+                    <label class="form-section__item">
+                        <span class="form-section__text">E-mail:</span>
+                        <span class="form-section__input-wrap">
+                            <input type="email" class="form-section__input" name="e-mail" placeholder="PCbox@gmail.com"
+                                   maxlength="20">
+                            <div class="form-section__icon--mail"></div>
+                        </span>
+                    </label>
+                </div>
+
+                <div class="form-section__field">
+                    <label class="form-section__item">
+                        <span class="form-section__text">Телефон:</span>
+                        <span class="form-section__input-wrap">
+                            <input type="tel" class="form-section__input" name="Телефон"
+                                   placeholder="+375-29-849-66-88" maxlength="17">
+                            <div class="form-sectionicon__icon form-section__icon--phone"></div>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-section form-section__comment">
+            <h3 class="form-section__title">Комментарий</h3>
+            <div class="container">
+                <div class="form-section__field form-section__field--textarea">
+                    <label class="form-section__item">
+                        <textarea name="Комментарий" id="Комментарий" cols="28" rows="5" maxlength="450"
+                        placeholder="Расскажи обо всех повадках кота"
+                        class="form-section__input form-section__input--textarea"></textarea>
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-secton form-section--extra">
+            <h3 class="form-section__title form-section__title--extra">Дополнительно</h3>
+            <div class="container">
+                <ul class="form-section__list form-section__list--checks">
+                    <li class="form-section__list-item">
+                        <label class="form-section__item">
+                            <input type="checkbox" class="form-section__checkbox" name="sweetener" checked>
+                            <span class="form-section__text form-section__text-checkbox">Сахарозаменитель</span>
+                        </label>
+                    </li>
+
+                    <li class="form-section__list-item">
+                        <label class="form-section__item">
+                            <input type="checkbox" class="form-section__checkbox" name="water">
+                            <span class="form-section__text form-section__text--checkbox">Питьевая вода</span>
+                        </label>
+                    </li>
+
+                    <li class="form-section__list-item">
+                        <label class="form-section__item">
+                            <input type="checkbox" class="form-section__checkbox" name="milk">
+                            <span class="form-section__text form-section__text-checkbox">Молоко</span>
+                        </label>
+                    </li>
+
+                    <li class="form-section__list-item">
+                        <label class="form-section__item">
+                            <input type="checkbox" class="form-section__checkbox" name="vitamins">
+                            <span class="form-section__text form-section__text--checkbox">Витамины</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+
+        <section class="program-form__submit container">
+            <button class="program-form__submit-btn btn">Отправить заявку</button>
+            <p class="program-form__note"><sup>*</sup> - Обязательные поля</p>
+        </section>
     </form>
+    <section class="cooperation cooperation--index">
+        <div class="cooperation__wrap">
+            <div class="container">
+                <div class="cooperation__inner">
+                    <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
+                    <div class="cooperation__address">
+                        <address class="cooperation__address-street">ул.Большая Конюшенная, д. 19/8
+                            Санкт-Петербург
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cooperation__map" id="map">
+            <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c80899cb7b8347d15ee8a216ebab2d39b49b4b6a5180ef7fcefa1043848b563&amp;width=100%25&amp;height=418&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+
+        <div class="cooperation__wrap-desktop container">
+            <div class="cooperation__inner-desktop">
+                <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
+                <div class="cooperation__address">
+                    <address class="cooperation__address-street">ул.Большая Конюшенная, д. 19/8
+                        Санкт-Петербург
+                    </address>
+                </div>
+            </div>
+            <div class="cooperation__map-desktop">
+                <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c80899cb7b8347d15ee8a216ebab2d39b49b4b6a5180ef7fcefa1043848b563&amp;width=100%25&amp;height=418&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+    </section>
 </main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrap">
+            <div class="footer__block footer__block--logo">
+                <a href="index.html" class="name"></a>
+            </div>
+            <div class="footer__block footer__block--social">
+                <ul class="footer__list social-list">
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link social-list__link--vk"></a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link social-list__link--inst"></a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link social-list__link--fb"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__block footer__block--god">
+                <h2 class="god__name">Лишай Матвей</h2>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+    var navTogglebtn = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+    navTogglebtn.classList.remove('.main-nav__toggle');
+
+
+    navToggle.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navTogglebtn.classList.remove('main-nav__toggle');
+            navMain.classList.add('main-nav--opened');
+            navTogglebtn.classList.add('main-nav__toggle--cross');
+        } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+            navTogglebtn.classList.add('main-nav__toggle');
+            navTogglebtn.classList.remove('main-nav__toggle--cross');
+        }
+    });
+</script>
 </body>
 </html>
