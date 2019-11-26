@@ -68,6 +68,7 @@
 }
 
 .catalog__wrap {
+  justify-content: space-around;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -179,6 +180,10 @@
   }
 }
 
+.catalog__title--more {
+  min-width: 200px;
+}
+
 .catalog__info {
   width: 100%;
   font-family: "Arial", sans-serif;
@@ -216,6 +221,7 @@
   max-width: 480px;
   flex: 1 0 100%;
   z-index: 2;
+  max-height: 40px;
 
   @include tablet {
     min-width: 248px;
@@ -226,5 +232,113 @@
     min-width: 169px;
   }
 }
+
+.catalog__link-icon {
+  width: 30px;
+  height: 30px;
+  margin: 25px 0;
+  position: relative;
+
+  &:hover .catalog__icon {
+    opacity: 1;
+    transition: all 0.35s ease-in;
+  }
+
+  &:active .catalog__icon {
+    opacity: 0.6;
+    transition: all 0.1s ease-in;
+  }
+
+  &:hover .catalog__icon:before,
+  &:hover .catalog__icon:after {
+    background-color: #68b738;
+    transition: all 0.35s ease-in;
+  }
+
+  &:active .catalog__icon:before,
+  &:active .catalog__icon:after {
+    background-color: #68b738;
+    transition: all 0.35s ease-in;
+  }
+
+  @include tablet {
+    margin: 15px 0 17px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.catalog__link-title--more {
+  min-width: 200px;
+  margin: 0;
+  padding-bottom: 6px;
+
+  &:hover .catalog__link-title--more {
+    text-shadow: 2px -2px 17px #68b738;
+    transition: text-shadow 0.3s ease-in;
+  }
+
+  &:active .catalog__title--more {
+    color: #111111;
+    text-shadow: none;
+    transition: color 0.1s ease-in;
+  }
+
+  @include tablet {
+    margin: 30px auto 20px;
+    width: 60%;
+  }
+
+  @include desktop {
+    width: 100%;
+  }
+}
+
+.catalog__icon {
+  opacity: 0.2;
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background-color: #222222;
+  }
+
+  &:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  @include tablet {
+    &:before,
+    &:after {
+      height: 4px;
+      background-color: #818181;
+    }
+  }
+}
+
+.catalog__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  line-height: 18px;
+  color: #111111;
+
+  @include tablet {
+    width: 170px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+
+
 
 
