@@ -9,10 +9,6 @@
   }
 }
 
-.program-form__info {
-  flex: 1 0 100%;
-}
-
 .program-form__title {
   margin: 0;
   padding: 27px 0 20px;
@@ -40,7 +36,6 @@
   @include tablet {
     margin: 20px 0;
     font-size: 20px;
-    padding-left: 40px;
     line-height: 1.5;
   }
 
@@ -62,17 +57,15 @@
   }
 
   @include desktop {
-    padding-top: 46px;
-    padding-bottom: 82px;
+    padding: 50px 0 50px 0;
   }
 }
 
 .program-form__submit-btn {
-  background: none;
   cursor: pointer;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
-  width: 100%;
+  /*width: 100%;*/
   margin: 0 auto;
   max-width: 540px;
   color: #ffffff;
@@ -81,32 +74,14 @@
   @include tablet {
     margin-left: 40px;
     margin-right: 60px;
-    width: 285px;
     padding: 16px;
     font-size: 20px;
+    width: 100%;
   }
 
   @include desktop {
     margin-left: 0;
-    width: 570px;
+    width: 100%;
     margin-right: 80px;
-  }
-}
-
-.program-form__note {
-  margin: 20px 0;
-  text-align: center;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-
-  sup {
-    vertical-align: top;
-  }
-
-  @include  tablet {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
   }
 }
