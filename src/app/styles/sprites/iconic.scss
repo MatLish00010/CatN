@@ -27,26 +27,20 @@
 @function iconic-char($filename) {
 	$char: "";
 
-	@if $filename == icon-cat-pro {
+	@if $filename == icon-gift {
 		$char: "\E001";
 	}
-	@if $filename == icon-cat-slim {
+	@if $filename == icon-tick {
 		$char: "\E002";
 	}
-	@if $filename == icon-gift {
+	@if $filename == logo-desktop {
 		$char: "\E003";
 	}
-	@if $filename == icon-tick {
+	@if $filename == logo-mobile {
 		$char: "\E004";
 	}
-	@if $filename == logo-desktop {
-		$char: "\E005";
-	}
-	@if $filename == logo-mobile {
-		$char: "\E006";
-	}
 	@if $filename == logo-tablet {
-		$char: "\E007";
+		$char: "\E005";
 	}
 
 	@return $char;
@@ -63,12 +57,6 @@
 	}
 }
 
-.iconic-icon-cat-pro {
-	@include iconic(icon-cat-pro);
-}
-.iconic-icon-cat-slim {
-	@include iconic(icon-cat-slim);
-}
 .iconic-icon-gift {
 	@include iconic(icon-gift);
 }
