@@ -49,36 +49,19 @@
   line-height: 2;
 
   @include tablet {
-    margin: 62px 0 75px;
     font-size: 36px;
-
-    br {
-      display: none;
-    }
-
-    &--extra {
-      margin-bottom: 40px;
-    }
-  }
-
-  @include desktop {
-    margin: 46px 0 60px;
-
-    &--extra {
-      margin: 48px 0 40px;
-    }
   }
 }
 
 .form-section__title {
   &:after {
+    content: "";
     width: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: -1;
     left: 0;
-    content: "";
     height: 4px;
     background-color: #68b738;
   }
@@ -90,23 +73,12 @@
   }
 }
 
-.form-section--contacts .form-section__title {
-  @include tablet {
-    margin-top: 0;
-  }
-
-  @include desktop {
-    margin-top: 46px;
-  }
-}
-
 .form-section__field {
   margin: 14px 0;
 
   @include tablet {
     margin: 16px 0;
     padding: 0 40px;
-    padding-bottom: 4px;
   }
 
   @include desktop {
@@ -140,7 +112,7 @@
 .form-section__input,
 .form-section__input::placeholder {
   font-family: "Oswald", sans-serif;
-  line-height: 1.12;
+  line-height: 1;
   text-transform: uppercase;
   font-size: 26px;
 
@@ -154,8 +126,7 @@
 }
 
 .form-section__text {
-  margin: 0;
-  margin-right: 10px;
+  margin-right: 20px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 300;
@@ -165,14 +136,6 @@
   @include tablet {
     font-size: 20px;
   }
-
-  @include desktop {
-    margin-right: 20px;
-  }
-}
-
-.form-section--cat-info .form-section__text {
-  margin-right: 15px;
 }
 
 .form-section--cat-info {
@@ -183,8 +146,7 @@
 .form-section__input {
   display: inline-block;
   padding: 13px;
-  flex: 1 0 70px;
-  height: 45px;
+  flex: 1;
   min-width: 177px;
   color: #444444;
   border: 2px solid #cdcdcd;
@@ -208,25 +170,13 @@
   }
 
   @include tablet {
-    height: 52px;
     line-height: 1.5;
     padding: 10px 20px;
-    flex: 1 0 150px;
   }
 
   &--textarea {
-    height: 150px;
     resize: none;
     font-family: "Oswald", sans-serif;
-
-    @include tablet {
-      height: 175px;
-      padding: 15px 20px;
-    }
-
-    @include desktop {
-      margin-top: 16px;
-    }
   }
 }
 
