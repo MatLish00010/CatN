@@ -27,7 +27,7 @@
   &--choose-program {
     margin-left: 20px;
     padding: 9px 20px;
-    outline: 1px solid #cdcdcd;
+    outline: 3px solid #cdcdcd;
 
     @include tablet {
       margin: 25px -30px 77px 40px;
@@ -276,10 +276,15 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
   &--checks {
     @include tablet {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
       padding-left: 40px;
@@ -287,6 +292,7 @@
 
     @include desktop {
       padding-left: 0;
+      display: flex;
     }
   }
 }
@@ -378,8 +384,4 @@
 
 .form-section__checkbox {
   display: none;
-}
-
-.form-section__checkbox + .form-section__text--checkbox:active:before {
-  background-image: none;
 }
