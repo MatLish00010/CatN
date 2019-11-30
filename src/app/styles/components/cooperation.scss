@@ -24,14 +24,14 @@
     font-family: "Arial", sans-serif;
     line-height: 20px;
     width: 50%;
+  }
 
-    &-street {
-      font-family: "Arial", sans-serif;
-      color: #444444;
-      margin: 0;
-      font-size: 14px;
-      line-height: 18px;
-    }
+  &__street {
+    font-family: "Arial", sans-serif;
+    color: #444444;
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
   }
 
   &__map {
@@ -76,15 +76,11 @@
     position: relative;
     background-color: #f1f1f1;
 
-    &__wrap {
+    &__inner {
       display: none;
-      position: absolute;
-      z-index: 1;
-      top: 50%;
-      left: 40px;
-      transform: translateY(-50%);
-      width: 570px;
+    }
 
+    &__wrap {
       &-desktop {
         display: block;
       }
@@ -103,6 +99,7 @@
         background-color: #fff;
         width: 540px;
         padding: 20px 35px;
+        left: 150px;
         top: 50%;
         transform: translateY(-50%);
       }
