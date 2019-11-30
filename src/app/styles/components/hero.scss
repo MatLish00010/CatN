@@ -32,6 +32,10 @@
   }
 }
 
+.hero__text {
+  z-index: 5;
+}
+
 .hero__title{
   padding: 27px 0 20px;
   font-size: 36px;
@@ -50,16 +54,9 @@
     padding: 35px 0;
     font-size: 60px;
   }
-
-  @include desktop{
-    z-index: 5;
-    margin-left: 100px;
-    margin-top: 34px;
-    padding-top: 50px ;
-  }
 }
 
-.hero__text{
+.hero__description{
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 14px;
