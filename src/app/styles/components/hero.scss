@@ -37,6 +37,13 @@
   font-size: 36px;
   font-weight: 500;
   line-height: 50px;
+  color: #111111;
+
+  &--mobile {
+    @include mobile {
+      color: #f2f2f2;
+    }
+  }
 
   @include tablet{
     margin-left: 100px;
@@ -57,6 +64,13 @@
   margin-bottom: 5px;
   font-size: 14px;
   text-transform: uppercase;
+  color: #111111;
+
+  &--mobile {
+    @include mobile {
+      color: #f2f2f2;
+    }
+  }
 
   @include tablet{
     margin-left: 100px;
