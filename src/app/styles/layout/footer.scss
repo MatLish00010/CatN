@@ -1,0 +1,150 @@
+.footer {
+  background-color: #f2f2f2;
+
+  &__block {
+    width: 100%;
+
+    &--logo {
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 27px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.name{
+  @include png-sprite($icon-logo-mobile-header);
+}
+
+.social-list {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 23px 0 17px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  &__item {
+    text-align: center;
+    width: 60px;
+  }
+
+  &__link {
+    padding: 20px;
+
+    &--vk {
+      position: relative;
+
+      &:before {
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        position: absolute;
+        @include png-sprite($icon-vk);
+      }
+    }
+
+    &--inst {
+      position: relative;
+
+      &:before {
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        position: absolute;
+        @include png-sprite($icon-insta);
+      }
+    }
+
+    &--fb {
+      position: relative;
+
+      &:before {
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        position: absolute;
+        @include png-sprite($icon-fb);
+      }
+    }
+  }
+}
+
+.footer__block--god {
+  display: flex;
+  justify-content: center;
+}
+
+.god__name {
+  color: #111111;
+  font-weight: 400;
+}
+
+@media (min-width: $mobile + 1) and (max-width: $tablet) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+    &__wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .social-list {
+    border: none;
+
+    &__link {
+      &--vk {
+        display: inline-block;
+
+        &:before {
+          content: "";
+          @include png-sprite($icon-t-vk);
+        }
+      }
+
+      &--inst {
+        display: inline-block;
+
+        &:before {
+          content: "";
+          @include png-sprite($icon-t-insta);
+        }
+      }
+
+      &--fb {
+        display: inline-block;
+
+        &:before {
+          content: "";
+          @include png-sprite($icon-t-fb);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet + 1) {
+
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+    &__wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .social-list {
+    border: none;
+  }
+}

@@ -1,0 +1,108 @@
+.cooperation {
+  &--index {
+    background-color: #fff;
+  }
+
+  &__inner {
+    padding-top: 28px;
+    padding-bottom: 26px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #111111;
+    width: 40%;
+    margin: 0;
+  }
+
+  &__address {
+    font-family: "Arial", sans-serif;
+    line-height: 20px;
+    width: 50%;
+  }
+
+  &__street {
+    font-family: "Arial", sans-serif;
+    color: #444444;
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__map {
+    width: 100%;
+    background-size: 320px 360px;
+  }
+
+  &__wrap-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $mobile + 1) and (max-width: $tablet) {
+  .cooperation {
+    &__inner {
+      padding: 63px 41px 59px;
+    }
+
+    &__title {
+      width: 160px;
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    &__address {
+      width: 200px;
+      text-align: right;
+
+      &-street {
+        font-size: 18px;
+      }
+    }
+
+    &__wrap-desktop {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet + 1) {
+  .cooperation {
+    position: relative;
+    background-color: #f1f1f1;
+
+    &__inner {
+      display: none;
+    }
+
+    &__wrap {
+      &-desktop {
+        display: block;
+      }
+    }
+
+    &__map {
+      display: none;
+    }
+
+    &__inner {
+      &-desktop {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        width: 540px;
+        padding: 20px 35px;
+        left: 150px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

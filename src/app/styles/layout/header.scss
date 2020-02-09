@@ -1,0 +1,77 @@
+.page-header {
+  position: relative;
+
+  @include desktop {
+    &--index {
+      z-index: 0;
+
+      &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 50%;
+        background-color: #63a73a;
+        background-image: url("../../images/big_img/index-background-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: right center;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.page-header__wrap {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @include desktop {
+    padding-top: 52px;
+  }
+}
+
+.page-header__logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  height: 45px;
+  box-sizing: content-box;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.page-header__logo-img {
+  width: 33px;
+  height: 38px;
+
+  @include tablet {
+    width: 173px;
+    height: 59px;
+  }
+
+  @include desktop {
+    width: 202px;
+    height: 60px;
+  }
+}
+
+
+
+
+
+
